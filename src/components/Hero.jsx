@@ -1,4 +1,29 @@
-const Hero = ({
+import React from "react";
+
+function Hero() {
+  return (
+    <div className="flex flex-col lg:flex-row items-center justify-between h-screen p-8 bg-gray-100">
+      {/* Left Section: H1 */}
+      <div className="lg:w-1/2 w-full flex items-center justify-center text-center lg:text-left">
+        <h1 className="text-4xl lg:text-6xl font-bold text-gray-900">
+          Welcome to Our Platform!
+        </h1>
+      </div>
+      {/* Right Section: Image */}
+      <div className="lg:w-1/2 w-full flex items-center justify-center">
+        <img
+          className="w-80 h-80 object-cover"
+          src="src/assets/20.svg"
+          alt="Hero Image"
+        />
+      </div>
+    </div>
+  );
+}
+export default Hero;
+
+
+{/*const Hero = ({
   title = "This is a title",
   subtitle = "This is a subtitle",
 }) => {
@@ -13,4 +38,4 @@ const Hero = ({
     </section>
   );
 };
-export default Hero;
+export default Hero; */}
