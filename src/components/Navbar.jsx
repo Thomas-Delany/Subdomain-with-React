@@ -20,22 +20,22 @@ function Navbar() {
           <div className="hidden sm:block">
             <div className="flex items-center justify-end space-x-4">
               <a
-                href="#"
+                href="https://cursos.englishreservoir.com/sign_in"
                 className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
               >
-                Home
+                Log in
               </a>
               <a
-                href="#"
+                href="https://englishreservoir.co.uk/"
                 className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
               >
-                About
+                Reservoir!
               </a>
               <a
-                href="#"
+                href="https://englishreservoir.co.uk/affiliate"
                 className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
               >
-                Contact
+                Affiliate
               </a>
             </div>
           </div>

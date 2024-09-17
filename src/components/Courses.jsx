@@ -2,12 +2,42 @@ import React from "react";
 
 function Courses() {
   const courses = [
-    { id: 1, title: "Course 1", imgSrc: "src/assets/b2_first.png" },
-    { id: 2, title: "Course 2", imgSrc: "src/assets/c1_advanced.png" },
-    { id: 3, title: "Course 3", imgSrc: "src/assets/c2_pro.png" },
-    { id: 4, title: "Course 4", imgSrc: "src/assets/Gramatica-esencial.png" },
-    { id: 5, title: "Course 5", imgSrc: "src/assets/pronunciacion-en-ingles.png" },
-    { id: 6, title: "Course 6", imgSrc: "src/assets/verbos-en-ingles.png" },
+    {
+      id: 1,
+      title: "Cambridge First",
+      imgSrc: "src/assets/b2_first.png",
+      paragraph: "Learn how to do the Cambridge First B2 Exam",
+    },
+    {
+      id: 2,
+      title: "Cambridge Advanced",
+      imgSrc: "src/assets/c1_advanced.png",
+      paragraph: "Learn how to do the Cambridge Advanced C1 Exam",
+    },
+    {
+      id: 3,
+      title: "Cambridge Proficiency",
+      imgSrc: "src/assets/c2_pro.png",
+      paragraph: "Learn how to do the Cambridge Proficiency C2 Exam",
+    },
+    {
+      id: 4,
+      title: "Gramática Esencial",
+      imgSrc: "src/assets/Gramatica-esencial.png",
+      paragraph: "Learn the essentials of English grammar",
+    },
+    {
+      id: 5,
+      title: "Pronunciación en Inglés",
+      imgSrc: "src/assets/pronunciacion-en-ingles.png",
+      paragraph: "Learn everything you need to know about Verbs in English",
+    },
+    {
+      id: 6,
+      title: "Verbos en Inglés",
+      imgSrc: "src/assets/verbos-en-ingles.png",
+      paragraph: "Learn all about English Pronunciation",
+    },
   ];
 
   return (
@@ -16,14 +46,27 @@ function Courses() {
         {courses.map((course) => (
           <div
             key={course.id}
-            className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow cursor-pointer"
+            className="bg-white rounded-lg justify-between p-6 transition-shadow cursor-pointer h-[400px]"
+            relative
+            overflow-hidden
+            flex
+            flex-col
           >
-            <img
-              className="w-full h-32 object-cover mb-4"
-              src={course.imgSrc}
-              alt={course.title}
-            />
-            <h2 className="text-xl font-semibold text-gray-800">{course.title}</h2>
+            <div className="flex-grow">
+              <img
+                className="w-full h-[60%] object-cover mb-4 rounded-lg"
+                src={course.imgSrc}
+                alt={course.title}
+              />
+            </div>
+            <div className="p-6">
+              <h3 className="text-xl text-center font-semibold text-gray-800">
+                {course.title}
+              </h3>
+              <div>
+                <p className="text-center">{course.paragraph}</p>
+              </div>
+            </div>
           </div>
         ))}
       </div>
