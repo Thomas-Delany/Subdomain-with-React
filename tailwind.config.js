@@ -6,7 +6,10 @@ export default {
       fontFamily: {
         sans: ["Roboto", "sans-serif"],
       },
+      colors: {
+        mellowGreen: '#00C699',
+      }
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/aspect-ratio')],
 };
