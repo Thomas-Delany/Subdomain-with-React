@@ -47,21 +47,23 @@ const products = [
 
 function Products() {
     return (
-      <div className="bg-mellowGreen">
-        <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+      <div className="bg-mellowGreen min-h-screen flex items-center justify-center">
+        <div className="mx-auto max-w-2xl px-16 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
           <h2 className="sr-only">Products</h2>
   
           <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-8">
             {products.map((product) => (
-              <a key={product.id} href={product.href} className="group">
-                <div className="w-full overflow-hidden rounded-lg bg-gray-200">
+              <a key={product.id} href={product.href} className="group bg-white rounded-lg">
+                <div className="w-full overflow-hidden rounded-t-lg">
                   <img
                     alt={product.imageAlt}
                     src={product.imageSrc}
                     className="h-full w-full object-cover object-center"
                   />
                 </div>
-                <p className="mt-5 text-lg font-medium text-gray-900 text-center">{product.description}</p>
+                <div className="mt-0 w-full">
+                <p className="py-8 px-2 text-lg font-bold text-gray-900 text-center">{product.description}</p>
+                </div>
               </a>
             ))}
           </div>
