@@ -3,32 +3,40 @@ import React from 'react';
 function Footer() {
   return (
     <footer
-    className="bg-gray-800 text-center lg:text-left">
-    <div className="container p-12 justify-content mx-auto text-center">
+    className="bg-gray-800 lg:text-left">
+    <div className="container p-12 justify-content mx-auto items-center">
       <div className="grid md:grid-cols-2 lg:grid-cols-4">
         {/* <!--First links section--> */}
         <div className="mb-6">
           <h5
-            className="mb-2.5 font-bold uppercase text-neutral-800 dark:text-neutral-200">
-            Links
+            className="mb-2.5 font-bold uppercase text-neutral-800 dark:text-neutral-200 text-center">
+            Our Courses
           </h5>
 
           <ul className="mb-0 list-none">
             <li>
               <a className="text-neutral-800 dark:text-neutral-200"
-              >Link 1</a>
+              >B2 Cambridge First</a>
             </li>
             <li>
               <a className="text-neutral-800 dark:text-neutral-200"
-              >Link 2</a>
+              >C1 Cambridge Advanced</a>
             </li>
             <li>
               <a className="text-neutral-800 dark:text-neutral-200"
-              >Link 3</a>
+              >C2 Cambridge Proficiency</a>
             </li>
             <li>
               <a className="text-neutral-800 dark:text-neutral-200"
-              >Link 4</a>
+              >Gramática Esencial</a>
+            </li>
+            <li>
+              <a className="text-neutral-800 dark:text-neutral-200"
+              >Verbos en Inglés</a>
+            </li>
+            <li>
+              <a className="text-neutral-800 dark:text-neutral-200"
+              >Pronunciación en Inglés</a>
             </li>
           </ul>
         </div>
@@ -36,26 +44,42 @@ function Footer() {
         {/* <!--Second links section--> */}
         <div className="mb-6">
           <h5
-            className="mb-2.5 font-bold uppercase text-neutral-800 dark:text-neutral-200">
-            Links
+            className="mb-2.5 font-bold uppercase text-neutral-800 dark:text-neutral-200 text-center">
+            Reservoir!
           </h5>
 
           <ul className="mb-0 list-none">
             <li>
               <a className="text-neutral-800 dark:text-neutral-200"
-              >Link 1</a>
+              >English Grammar</a>
             </li>
             <li>
               <a className="text-neutral-800 dark:text-neutral-200"
-              >Link 2</a>
+              >Verbs in English</a>
             </li>
             <li>
               <a className="text-neutral-800 dark:text-neutral-200"
-              >Link 3</a>
+              >English Confusions</a>
             </li>
             <li>
               <a className="text-neutral-800 dark:text-neutral-200"
-              >Link 4</a>
+              >Cambridge Courses</a>
+            </li>
+            <li>
+              <a className="text-neutral-800 dark:text-neutral-200"
+              >Punctuation</a>
+            </li>
+            <li>
+              <a className="text-neutral-800 dark:text-neutral-200"
+              >Pronunciation</a>
+            </li>
+            <li>
+              <a className="text-neutral-800 dark:text-neutral-200"
+              >Take A Free Course!</a>
+            </li>
+            <li>
+              <a className="text-neutral-800 dark:text-neutral-200"
+              >Blog</a>
             </li>
           </ul>
         </div>
@@ -63,26 +87,26 @@ function Footer() {
         {/* <!--Third links section--> */}
         <div className="mb-6">
           <h5
-            className="mb-2.5 font-bold uppercase text-neutral-800 dark:text-neutral-200">
-            Links
+            className="mb-2.5 font-bold uppercase text-neutral-800 dark:text-neutral-200 text-center">
+            More
           </h5>
 
           <ul className="mb-0 list-none">
             <li>
               <a className="text-neutral-800 dark:text-neutral-200"
-              >Link 1</a>
+              >About Us</a>
             </li>
             <li>
               <a className="text-neutral-800 dark:text-neutral-200"
-              >Link 2</a>
+              >Learn For Free!</a>
             </li>
             <li>
               <a className="text-neutral-800 dark:text-neutral-200"
-              >Link 3</a>
+              >Our Teaching Method</a>
             </li>
             <li>
               <a className="text-neutral-800 dark:text-neutral-200"
-              >Link 4</a>
+              >Affiliate Programme</a>
             </li>
           </ul>
         </div>
@@ -90,26 +114,26 @@ function Footer() {
         {/* <!--Fourth links section--> */}
         <div className="mb-6">
           <h5
-            className="mb-2.5 font-bold uppercase text-neutral-800 dark:text-neutral-200">
-            Links
+            className="mb-2.5 font-bold uppercase text-neutral-800 dark:text-neutral-200 text-center">
+            Social
           </h5>
 
           <ul className="mb-0 list-none">
             <li>
               <a className="text-neutral-800 dark:text-neutral-200"
-              >Link 1</a>
+              >YouTube</a>
             </li>
             <li>
               <a className="text-neutral-800 dark:text-neutral-200"
-              >Link 2</a>
+              >Instagram</a>
             </li>
             <li>
               <a className="text-neutral-800 dark:text-neutral-200"
-              >Link 3</a>
+              >Twitter/X</a>
             </li>
             <li>
               <a className="text-neutral-800 dark:text-neutral-200"
-              >Link 4</a>
+              >Facebook</a>
             </li>
           </ul>
         </div>
