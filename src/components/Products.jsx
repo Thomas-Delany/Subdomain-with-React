@@ -1,8 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 const products = [
   {
     id: 1,
-    href: "#",
+    href: "/courses/A1",
     description: "Learn how to do the Cambridge First B2 Exam",
     imageSrc: "src/assets/b2_first.png",
     imageAlt:
@@ -59,9 +61,9 @@ function Products() {
 
         <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-8 py-4">
           {products.map((product) => (
-            <a
+            <Link
               key={product.id}
-              href={product.href}
+              to={product.href} // Change href to to for react-router
               className="group bg-white rounded-lg"
             >
               <div className="w-full overflow-hidden rounded-t-lg">
@@ -78,7 +80,7 @@ function Products() {
                   </p>
                 </div>
               </div>
-            </a>
+            </Link>
           ))}
         </div>
         <div className="flex justify-center pt-4">
