@@ -7,7 +7,7 @@ function Hero() {
         <div className="relative isolate overflow-hidden px-6 py-4 sm:px-16 md:pt-20 lg:flex lg:gap-x-16 lg:px-24 lg:pt-0 justify-center items-center flex flex-col lg:flex-row">
           <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-20 lg:text-left flex flex-col justify-center lg:justify-start h-full">
             <h1 className="text-5xl font-black tracking-tight leading-tight font-sans">
-              Learn English in a Fun, Simple and Dynamic Way!
+              Learn English with Fun, Simplicity and Structure!
             </h1>
           </div>
           <div className="mx-auto relative lg:mt-0 lg:flex items-center hidden lg:block">
