@@ -8,6 +8,7 @@ export default {
       },
       colors: {
         mellowGreen: '#00C699',
+        greenAone: '#57b252',
       }
     },
   },
