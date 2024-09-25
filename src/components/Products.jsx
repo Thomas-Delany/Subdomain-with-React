@@ -5,47 +5,47 @@ const products = [
   {
     id: 1,
     href: "/courses/A1",
-    description: "Learn how to do the Cambridge First B2 Exam",
+    description: "A1 —  Acceso",
     imageSrc: "src/assets/b2_first.png",
     imageAlt:
       "Tall slender porcelain bottle with natural clay textured body and cork stopper.",
   },
   {
     id: 2,
-    href: "#",
-    description: "Learn how to do the Cambridge Advanced C1 Exam",
+    href: "/courses/A2",
+    description: "A2 —  Plataforma",
     imageSrc: "src/assets/c1_advanced.png",
     imageAlt:
       "Olive drab green insulated bottle with flared screw lid and flat top.",
   },
   {
     id: 3,
-    href: "#",
-    description: "Learn how to do the Cambridge Proficiency C2 Exam",
+    href: "/courses/B1",
+    description: "B1 —  Intermedio",
     imageSrc: "src/assets/c2_pro.png",
     imageAlt:
       "Person using a pen to cross a task off a productivity paper card.",
   },
   {
     id: 4,
-    href: "#",
-    description: "The Essentials of English Pronunciation",
+    href: "/courses/B2",
+    description: "B2 —  Intermedio Alto",
     imageSrc: "src/assets/pronunciacion-en-ingles.png",
     imageAlt:
       "Person using a pen to cross a task off a productivity paper card.",
   },
   {
     id: 5,
-    href: "#",
-    description: "English Grammar Essentials",
+    href: "/courses/C1",
+    description: "C1 —  Dominio Operativo Eficaz",
     imageSrc: "src/assets/Gramatica-esencial.png",
     imageAlt:
       "Hand holding black machined steel mechanical pencil with brass tip and top.",
   },
   {
     id: 6,
-    href: "#",
-    description: "English Verbs - All you need to know",
+    href: "/courses/C2",
+    description: "C2 —  Maestría",
     imageSrc: "src/assets/verbos-en-ingles.png",
     imageAlt:
       "Person using a pen to cross a task off a productivity paper card.",
