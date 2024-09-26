@@ -5,6 +5,8 @@ export default {
     extend: {
       fontFamily: {
         sans: ["Roboto", "sans-serif"],
+        bryndan: ['"Bryndan Write"', 'cursive'],
+        dosis: ['Dosis', 'sans-serif'],
       },
       colors: {
         mellowGreen: '#00C699',

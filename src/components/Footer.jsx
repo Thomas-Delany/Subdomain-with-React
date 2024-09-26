@@ -2,76 +2,76 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer class="bg-white dark:bg-gray-900">
-      <div class="mx-auto w-full max-w-screen-xl p-4 p-12 lg:py-8">
-        <div class="md:flex md:justify-between">
-          <div class="mb-6 md:mb-0">
-            <a href="#" class="flex items-center">
+    <footer className="bg-white dark:bg-gray-900">
+      <div className="mx-auto w-full max-w-screen-xl p-4 p-12 lg:py-8">
+        <div className="md:flex md:justify-between">
+          <div className="mb-6 md:mb-0">
+            <a href="#" className="flex items-center">
               <img
                 src="src/assets/LOGO-DARK.png"
-                class="h-8 me-16"
+                className="h-8 me-16"
                 alt="English Reservoir"
               />
             </a>
           </div>
-          <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+          <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
             <div>
-              <h2 class="mb-4 text-lg font-semibold text-gray-900 dark:text-white">
+              <h2 className="mb-4 text-lg font-semibold text-gray-900 dark:text-white">
                 Our Courses
               </h2>
-              <ul class="text-gray-500 dark:text-gray-400 font-medium">
-                <li class="mb-2">
+              <ul className="text-gray-500 dark:text-gray-400 font-medium">
+                <li className="mb-2">
                   <a
                     href="https://cursos.englishreservoir.com/p/b2-cambridge-first"
-                    class="hover:underline"
+                    className="hover:underline"
                   >
                     B2 Cambridge Fist
                   </a>
                 </li>
-                <li class="mb-2">
+                <li className="mb-2">
                   <a
                     href="https://cursos.englishreservoir.com/p/c1-cambridge-advanced"
-                    class="hover:underline"
+                    className="hover:underline"
                   >
                     C1 Cambridge Advanced
                   </a>
                 </li>
-                <li class="mb-2">
+                <li className="mb-2">
                   <a
                     href="https://cursos.englishreservoir.com/p/c2-cambridge-proficiency"
-                    class="hover:underline"
+                    className="hover:underline"
                   >
                     C2 Cambridge Proficiency
                   </a>
                 </li>
-                <li class="mb-2">
+                <li className="mb-2">
                   <a
                     href="https://cursos.englishreservoir.com/p/gramatica-esencial-metodo-divertido"
-                    class="hover:underline"
+                    className="hover:underline"
                   >
                     Gramática Esencial
                   </a>
                 </li>
-                <li class="mb-2">
+                <li className="mb-2">
                   <a
                     href="https://cursos.englishreservoir.com/p/verbos-en-ingles-metodo-divertido"
-                    class="hover:underline"
+                    className="hover:underline"
                   >
                     Verbos en Inglés
                   </a>
                 </li>
-                <li class="mb-2">
+                <li className="mb-2">
                   <a
                     href="https://cursos.englishreservoir.com/p/pronunciacion-en-ingles"
-                    class="hover:underline"
+                    className="hover:underline"
                   >
                     Pronunciación en Inglés
                   </a>
                 </li>
-                <li class="mb-2">
+                <li className="mb-2">
                   <a
                     href="https://cursos.englishreservoir.com/p/curso-de-ingles-gratuito"
-                    class="hover:underline"
+                    className="hover:underline"
                   >
                     Take a Free Course!
                   </a>
@@ -79,62 +79,62 @@ function Footer() {
               </ul>
             </div>
             <div>
-              <h2 class="mb-4 text-lg font-semibold text-gray-900 dark:text-white">
+              <h2 className="mb-4 text-lg font-semibold text-gray-900 dark:text-white">
                 Reservoir!
               </h2>
-              <ul class="text-gray-500 dark:text-gray-400 font-medium">
-                <li class="mb-2">
+              <ul className="text-gray-500 dark:text-gray-400 font-medium">
+                <li className="mb-2">
                   <a
                     href="https://englishreservoir.co.uk/english-grammar/"
-                    class="hover:underline "
+                    className="hover:underline "
                   >
                     English Grammar
                   </a>
                 </li>
-                <li class="mb-2">
+                <li className="mb-2">
                   <a
                     href="https://englishreservoir.co.uk/english-verbs/"
-                    class="hover:underline"
+                    className="hover:underline"
                   >
                     Verbs in English
                   </a>
                 </li>
-                <li class="mb-2">
+                <li className="mb-2">
                   <a
                     href="https://englishreservoir.co.uk/english-confusions/"
-                    class="hover:underline "
+                    className="hover:underline "
                   >
                     English Confusisons
                   </a>
                 </li>
-                <li class="mb-2">
+                <li className="mb-2">
                   <a
                     href="https://englishreservoir.co.uk/cambridge/"
-                    class="hover:underline"
+                    className="hover:underline"
                   >
                     Cambridge Courses
                   </a>
                 </li>
-                <li class="mb-2">
+                <li className="mb-2">
                   <a
                     href="https://englishreservoir.co.uk/english-punctuation/"
-                    class="hover:underline "
+                    className="hover:underline "
                   >
                     Punctuation
                   </a>
                 </li>
-                <li class="mb-2">
+                <li className="mb-2">
                   <a
                     href="https://englishreservoir.co.uk/english-pronunciation/"
-                    class="hover:underline"
+                    className="hover:underline"
                   >
                     Pronunciation
                   </a>
                 </li>
-                <li class="mb-2">
+                <li className="mb-2">
                   <a
                     href="https://englishreservoir.co.uk/blog"
-                    class="hover:underline"
+                    className="hover:underline"
                   >
                     Blog
                   </a>
@@ -142,38 +142,38 @@ function Footer() {
               </ul>
             </div>
             <div>
-              <h2 class="mb-4 text-lg font-semibold text-gray-900 dark:text-white">
+              <h2 className="mb-4 text-lg font-semibold text-gray-900 dark:text-white">
                 More
               </h2>
-              <ul class="text-gray-500 dark:text-gray-400 font-medium">
-                <li class="mb-2">
+              <ul className="text-gray-500 dark:text-gray-400 font-medium">
+                <li className="mb-2">
                   <a
                     href="https://englishreservoir.co.uk/about-english-reservoir"
-                    class="hover:underline"
+                    className="hover:underline"
                   >
                     About us
                   </a>
                 </li>
-                <li class="mb-2">
+                <li className="mb-2">
                   <a
                     href="https://www.youtube.com/@EnglishReservoir/featured"
-                    class="hover:underline"
+                    className="hover:underline"
                   >
                     Learn for Free!
                   </a>
                 </li>
-                <li class="mb-2">
+                <li className="mb-2">
                   <a
                     href="https://englishreservoir.co.uk/method-english-reservoir"
-                    class="hover:underline"
+                    className="hover:underline"
                   >
                     Our Teaching Method
                   </a>
                 </li>
-                <li class="mb-2">
+                <li className="mb-2">
                   <a
                     href="https://englishreservoir.co.uk/affiliate"
-                    class="hover:underline"
+                    className="hover:underline"
                   >
                     Affiliate Programme
                   </a>
@@ -182,22 +182,22 @@ function Footer() {
             </div>
           </div>
         </div>
-        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-        <div class="sm:flex sm:items-center sm:justify-between">
-          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+        <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <div className="sm:flex sm:items-center sm:justify-between">
+          <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
             © 2024{" "}
-            <a href="https://englishreservoir.co.uk/" class="hover:underline">
+            <a href="https://englishreservoir.co.uk/" className="hover:underline">
               English Reservoir™
             </a>
             . All Rights Reserved.
           </span>
-          <div class="flex mt-4 sm:justify-center sm:mt-0">
+          <div className="flex mt-4 sm:justify-center sm:mt-0">
             <a
               href="#"
-              class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+              className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
             >
               <svg
-                class="w-4 h-4"
+                className="w-4 h-4"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
@@ -209,14 +209,14 @@ function Footer() {
                   clip-rule="evenodd"
                 />
               </svg>
-              <span class="sr-only">Facebook page</span>
+              <span className="sr-only">Facebook page</span>
             </a>
             <a
               href="#"
-              class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
+              className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
             >
               <svg
-                class="w-4 h-4"
+                className="w-4 h-4"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
@@ -228,14 +228,14 @@ function Footer() {
                   clip-rule="evenodd"
                 />
               </svg>
-              <span class="sr-only">Twitter page</span>
+              <span className="sr-only">Twitter page</span>
             </a>
             <a
               href="https://github.com/Thomas-Delany/Subdomain-with-React"
-              class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
+              className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
             >
               <svg
-                class="w-4 h-4"
+                className="w-4 h-4"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="currentColor"
@@ -247,7 +247,7 @@ function Footer() {
                   clip-rule="evenodd"
                 />
               </svg>
-              <span class="sr-only">GitHub account</span>
+              <span className="sr-only">GitHub account</span>
             </a>
           </div>
         </div>
