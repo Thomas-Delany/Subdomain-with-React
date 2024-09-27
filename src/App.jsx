@@ -4,12 +4,12 @@ import Hero from "./components/Hero";
 import Products from "./components/Products";
 import FreeCourse from "./components/FreeCourse";
 import Footer from "./components/Footer";
-import A1 from "./pages/courses/A1"; // Import course pages
-import A2 from "./pages/courses/A2";
-import B1 from "./pages/courses/B1";
-import B2 from "./pages/courses/B2";
-import C1 from "./pages/courses/C1";
-import C2 from "./pages/courses/C2";
+import A1 from "./pages/courses/A1/A1"; // Import course pages
+import A2 from "./pages/courses/A2/A2";
+import B1 from "./pages/courses/B1/B1";
+import B2 from "./pages/courses/B2/B2";
+import C1 from "./pages/courses/C1/C1";
+import C2 from "./pages/courses/C2/C2";
 import B2CambridgeFirst from "./pages/courses/B2CambridgeFirst";
 import C1CambridgeAdvanced from "./pages/courses/C1CambridgeAdvanced";
 import C2CambridgeProficiency from "./pages/courses/C2CambridgeProficiency";
@@ -36,12 +36,12 @@ function App() {
         />
 
         {/* Route for each Course page */}
-        <Route path="/courses/A1" element={<A1 />} />
-        <Route path="/courses/A2" element={<A2 />} />
-        <Route path="/courses/B1" element={<B1 />} />
-        <Route path="/courses/B2" element={<B2 />} />
-        <Route path="/courses/C1" element={<C1 />} />
-        <Route path="/courses/C2" element={<C2 />} />
+        <Route path="/courses/A1/A1" element={<A1 />} />
+        <Route path="/courses/A2/A2" element={<A2 />} />
+        <Route path="/courses/B1/B1" element={<B1 />} />
+        <Route path="/courses/B2/B2" element={<B2 />} />
+        <Route path="/courses/C1/C1" element={<C1 />} />
+        <Route path="/courses/C2/C2" element={<C2 />} />
         <Route path="/courses/B2CambridgeFirst" element={<B2CambridgeFirst />} />
         <Route path="/courses/C1CambridgeAdvanced" element={<C1CambridgeAdvanced />} />
         <Route path="/courses/C2CambridgeProficiency" element={<C2CambridgeProficiency />} />

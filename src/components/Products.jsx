@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const products = [
   {
     id: 1,
-    href: "/courses/A1",
+    href: "/courses/A1/A1",
     description: "A1 —  Acceso",
     imageSrc: "src/assets/A1.png",
     imageAlt:
@@ -12,7 +12,7 @@ const products = [
   },
   {
     id: 2,
-    href: "/courses/A2",
+    href: "/courses/A2/A2",
     description: "A2 —  Plataforma",
     imageSrc: "src/assets/A2.png",
     imageAlt:
@@ -20,7 +20,7 @@ const products = [
   },
   {
     id: 3,
-    href: "/courses/B1",
+    href: "/courses/B1/B1",
     description: "B1 —  Intermedio",
     imageSrc: "src/assets/B1.png",
     imageAlt:
@@ -28,7 +28,7 @@ const products = [
   },
   {
     id: 4,
-    href: "/courses/B2",
+    href: "/courses/B2/B2",
     description: "B2 —  Intermedio Alto",
     imageSrc: "src/assets/B2.png",
     imageAlt:
@@ -36,7 +36,7 @@ const products = [
   },
   {
     id: 5,
-    href: "/courses/C1",
+    href: "/courses/C1/C1",
     description: "C1 —  Dominio Operativo Eficaz",
     imageSrc: "src/assets/C1.png",
     imageAlt:
@@ -44,7 +44,7 @@ const products = [
   },
   {
     id: 6,
-    href: "/courses/C2",
+    href: "/courses/C2/C2",
     description: "C2 —  Maestría",
     imageSrc: "src/assets/C2.png",
     imageAlt:

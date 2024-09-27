@@ -1,7 +1,6 @@
-// src/pages/courses/A1.jsx
 import React from "react";
 
-const A1 = () => {
+const Hero = () => {
   return (
     <section className="bg-greenAone">
       <div className="max-w-screen-xl px-8 md:px-28 py-8 mx-auto lg:gap-8 xl:gap-0 grid lg:grid-cols-12 lg:py-10 flex justify-between items-center">
@@ -30,4 +29,4 @@ const A1 = () => {
   );
 };
 
-export default A1;
+export default Hero;
