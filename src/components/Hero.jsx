@@ -5,7 +5,7 @@ function Hero() {
     <section className="bg-white">
       <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:grid-cols-12 lg:py-16 flex justify-between items-center">
         <div className="mr-auto lg:col-span-6 mx-auto p-6">
-          <h1 className="max-w-2xl mb-5 text-4xl tracking-normal md:text-5xl xl:text-5xl text-black font-black font-dosis">
+          <h1 className="max-w-2xl mb-5 text-5xl tracking-normal md:text-5xl xl:text-5xl text-black font-black font-dosis">
             Learn English with Fun, Structure and Ease!
           </h1>
           <p className="max-w-2xl mb-4 font-light font-dosis text-gray-950 lg:mb-8 md:text-lg lg:text-xl">
