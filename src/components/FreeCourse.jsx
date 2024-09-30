@@ -5,7 +5,7 @@ function FreeCourse() {
     <div className="bg-mellowGreen py-4 pb-32 flex items-center justify-center">
       <div className="mx-auto max-w-2xl px-16 py-4 sm:px-6 sm:py-4 lg:max-w-3xl lg:px-8">
         <div className="flex justify-center items-center py-8">
-          <h1 className="text-4xl text-center font-bold text-white font-sans leading-tight">
+          <h1 className="text-5xl text-center font-bold text-white font-dosis leading-tight">
             Take our free English course!
           </h1>
         </div>

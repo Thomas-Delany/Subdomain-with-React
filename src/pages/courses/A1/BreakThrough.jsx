@@ -2,7 +2,7 @@ import React from "react";
 import Hero from "./Hero";
 import Curriculum from "./Curriculum";
 
-const A1 = () => {
+const BreakThrough = () => {
   return (
     <div>
     <Hero />
@@ -11,4 +11,4 @@ const A1 = () => {
   );
 };
 
-export default A1;
+export default BreakThrough;

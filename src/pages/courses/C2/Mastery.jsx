@@ -1,12 +1,12 @@
 import React from "react";
 
-const C1 = () => {
+const Mastery = () => {
   return (
     <div>
-      <h1>C1 Course</h1>
+      <h1>C2 Course</h1>
       {/* Add content for the A1 course */}
     </div>
   );
 };
 
-export default C1;
+export default Mastery;
