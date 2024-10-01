@@ -1,5 +1,36 @@
 import React from "react";
-import { FaCheckCircle } from "react-icons/fa"; // Importing an icon from react-icons
+import { FaCheckCircle, FaBook, FaGraduationCap } from "react-icons/fa"; // Importing an icon from react-icons
+
+const curriculumData = [
+  {
+    icon: FaCheckCircle,
+    title: "UNIT 1",
+    listItems: [
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    ]
+  },
+  {
+    icon: FaBook,
+    title: "UNIT 2",
+    listItems: [
+      "Curabitur vehicula mi at fringilla eleifend.",
+      "Vestibulum facilisis, lorem eget fringilla imperdiet.",
+      "Suspendisse potenti."
+    ]
+  },
+  {
+    icon: FaGraduationCap,
+    title: "UNIT 3",
+    listItems: [
+      "Quisque scelerisque diam ut urna.",
+      "Nam consequat, tortor nec fringilla venenatis.",
+      "Fusce imperdiet metus sit amet orci mollis feugiat."
+    ]
+  },
+  // Add more units as necessary
+];
 
 const Curriculum = () => {
   return (
@@ -9,22 +40,28 @@ const Curriculum = () => {
           Study Plan
         </h2>
 
-        <div className="grid place-items-center py-8 px-8">
-          <div className="flex items-center justify-center w-10/12 bg-white rounded-3xl p-8">
+        {curriculumData.map((unit, index) => (
+
+        <div key={index} className="grid place-items-center py-8 px-8">
+          <div className="flex items-center justify-center w-10/12 bg-blue-500 rounded-3xl p-8">
+
+            {/* Left Inner Div for Icon */}
             <div className="hidden md:flex justify-center items-center bg-white rounded-full p-4 mr-6">
-              <FaCheckCircle className="text-blue-500 text-6xl md:text-7xl lg:text-8xl" />
+              <unit.icon className="text-blue-500 text-6xl md:text-7xl lg:text-8xl" />
             </div>
 
-            <div className="bg-[#5271ff] p-4 rounded-xl w-full text-white">
-                <h1 className="text-2xl font-bold mb-4 text-center">UNIT 1</h1>
+            {/* Right Inner Div for Bullet Points */}
+            <div className="bg-white p-4 rounded-xl w-full text-black">
+              <h1 className="text-2xl font-bold mb-4 text-center font-dosis">{unit.title}</h1>
                 <ul className="list-disc pl-5 space-y-2 text-lg font-semibold">
-                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                  {unit.listItems.map((item, i) => (
+                    <li key={i}>{item}</li>
+                  ))}
                 </ul>
             </div>
           </div>
         </div>
+        ))}
       </div>
     </section>
   );
