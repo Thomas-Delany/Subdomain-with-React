@@ -1,9 +1,10 @@
 import React from "react";
-import { FaCheckCircle, FaBook, FaGraduationCap } from "react-icons/fa"; // Importing an icon from react-icons
+import { FaCheckCircle, FaBook, FaGraduationCap, FaChalkboardTeacher } from "react-icons/fa";
+import { TfiBlackboard } from "react-icons/tfi";
 
 const curriculumData = [
   {
-    icon: FaCheckCircle,
+    icon: TfiBlackboard,
     title: "UNIT 1",
     listItems: [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
@@ -12,8 +13,17 @@ const curriculumData = [
     ]
   },
   {
-    icon: FaBook,
+    icon: FaChalkboardTeacher,
     title: "UNIT 2",
+    listItems: [
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    ]
+  },
+  {
+    icon: FaBook,
+    title: "UNIT 3",
     listItems: [
       "Curabitur vehicula mi at fringilla eleifend.",
       "Vestibulum facilisis, lorem eget fringilla imperdiet.",
@@ -22,7 +32,25 @@ const curriculumData = [
   },
   {
     icon: FaGraduationCap,
-    title: "UNIT 3",
+    title: "UNIT 4",
+    listItems: [
+      "Quisque scelerisque diam ut urna.",
+      "Nam consequat, tortor nec fringilla venenatis.",
+      "Fusce imperdiet metus sit amet orci mollis feugiat."
+    ]
+  },
+  {
+    icon: FaGraduationCap,
+    title: "UNIT 5",
+    listItems: [
+      "Quisque scelerisque diam ut urna.",
+      "Nam consequat, tortor nec fringilla venenatis.",
+      "Fusce imperdiet metus sit amet orci mollis feugiat."
+    ]
+  },
+  {
+    icon: FaGraduationCap,
+    title: "UNIT 6",
     listItems: [
       "Quisque scelerisque diam ut urna.",
       "Nam consequat, tortor nec fringilla venenatis.",
