@@ -5,7 +5,7 @@ const products = [
   {
     id: 1,
     href: "/courses/A1/BreakThrough",
-    description: "A1 —  Acceso",
+    description: "A1 —  BreakThrough",
     imageSrc: "src/assets/A1.png",
     imageAlt:
       "Tall slender porcelain bottle with natural clay textured body and cork stopper.",
@@ -13,7 +13,7 @@ const products = [
   {
     id: 2,
     href: "/courses/A2/WayStage",
-    description: "A2 —  Plataforma",
+    description: "A2 —  WayStage",
     imageSrc: "src/assets/A2.png",
     imageAlt:
       "Olive drab green insulated bottle with flared screw lid and flat top.",
@@ -21,7 +21,7 @@ const products = [
   {
     id: 3,
     href: "/courses/B1/ThresHold",
-    description: "B1 —  Intermedio",
+    description: "B1 —  ThresHold",
     imageSrc: "src/assets/B1.png",
     imageAlt:
       "Person using a pen to cross a task off a productivity paper card.",
@@ -29,7 +29,7 @@ const products = [
   {
     id: 4,
     href: "/courses/B2/Vantage",
-    description: "B2 —  Intermedio Alto",
+    description: "B2 —  Vantage",
     imageSrc: "src/assets/B2.png",
     imageAlt:
       "Person using a pen to cross a task off a productivity paper card.",
@@ -37,7 +37,7 @@ const products = [
   {
     id: 5,
     href: "/courses/C1/Advanced",
-    description: "C1 —  Dominio Operativo Eficaz",
+    description: "C1 —  Advanced",
     imageSrc: "src/assets/C1.png",
     imageAlt:
       "Hand holding black machined steel mechanical pencil with brass tip and top.",
@@ -45,7 +45,7 @@ const products = [
   {
     id: 6,
     href: "/courses/C2/Mastery",
-    description: "C2 —  Maestría",
+    description: "C2 —  Mastery",
     imageSrc: "src/assets/C2.png",
     imageAlt:
       "Person using a pen to cross a task off a productivity paper card.",
@@ -109,32 +109,34 @@ function Products() {
         <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-8 py-4">
           {products.map((product, index) => (
             <>
-            {/* Insert an H3 header before course 7 */}
-          {index === 6 && (
-            <div className="col-span-full flex justify-center items-center pt-8">
-              <h2 className="text-5xl text-center font-bold text-white leading-tight font-dosis">Specialized Courses</h2>   
-            </div>
-          )}
-            <Link
-              key={product.id}
-              to={product.href} // Change href to to for react-router
-              className="group bg-white rounded-lg"
-            >
-              <div className="w-full overflow-hidden rounded-t-lg">
-                <img
-                  alt={product.imageAlt}
-                  src={product.imageSrc}
-                  className="h-full w-full object-cover object-center"
-                />
-              </div>
-              <div className="mt-0 w-full rounded-lg">
-                <div className="w-8/12 mx-auto">
-                  <p className="py-8 text-lg font-bold text-black text-center">
-                    {product.description}
-                  </p>
+              {/* Insert an H3 header before course 7 */}
+              {index === 6 && (
+                <div className="col-span-full flex justify-center items-center pt-8">
+                  <h2 className="text-5xl text-center font-bold text-white leading-tight font-dosis">
+                    Specialized Courses
+                  </h2>
                 </div>
-              </div>
-            </Link>
+              )}
+              <Link
+                key={product.id}
+                to={product.href} // Change href to to for react-router
+                className="group bg-white rounded-lg"
+              >
+                <div className="w-full overflow-hidden rounded-t-lg">
+                  <img
+                    alt={product.imageAlt}
+                    src={product.imageSrc}
+                    className="h-full w-full object-cover object-center"
+                  />
+                </div>
+                <div className="mt-0 w-full rounded-lg">
+                  <div className="w-8/12 mx-auto">
+                    <p className="py-8 text-lg font-bold text-black text-center">
+                      {product.description}
+                    </p>
+                  </div>
+                </div>
+              </Link>
             </>
           ))}
         </div>
