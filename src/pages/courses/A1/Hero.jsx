@@ -4,14 +4,14 @@ const Hero = () => {
   return (
     <section className="bg-greenAone">
       <div className="max-w-screen-xl px-8 md:px-28 py-8 mx-auto lg:gap-8 xl:gap-0 grid lg:grid-cols-12 lg:py-10 flex justify-between items-center">
-        <div className="mr-auto lg:col-span-6 mx-auto p-6">
+        <div className="mr-auto lg:col-span-7 mx-auto p-6">
           <h1 className="max-w-2xl mb-5 tracking-normal text-4xl md:text-5xl text-white font-bryndan font-medium pb-4 text-center md:text-left">
             A1 — Breakthrough
           </h1>
-          <p className="max-w-2xl mb-4 font-semibold lg:mb-4 text-2xl md:text-3xl text-white text-left font-dosis">
-            What you will learn:
+          <p className="max-w-2xl mb-4 font-semibold lg:mb-4 text-2xl md:text-3xl text-white text-left font-roboto">
+            What you will learn
           </p>
-          <ul className="list-disc text-white text-left font-dosis font-medium text-xl md:text-2xl">
+          <ul className="list-disc text-white text-left font-roboto font-medium text-xl md:text-2xl">
             <li>
               Understand beginner grammar concepts such as the Present Simple
               and Present Perfect.
@@ -20,16 +20,16 @@ const Hero = () => {
             <li>Interact in a simple way with others</li>
             <li>Ask personal questions</li>
           </ul>
-          <div className="space-x-2 text-center md:text-left py-5">
+          <div className="text-center md:text-left pt-8">
             <button
               type="button"
-              className="w-32 h-12 text-black bg-white font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2"
+              className="w-32 h-12 text-black bg-white font-semibold font-roboto rounded-lg text-sm px-5 py-2.5 me-2 mb-2"
             >
               Begin!
             </button>
           </div>
         </div>
-        <div className="hidden lg:col-span-6 lg:flex justify-center items-center mx-auto h-[400px]">
+        <div className="hidden lg:col-span-5 lg:flex justify-center items-center mx-auto h-[400px]">
           <h2 className="font-bryndan text-white text-[350px]">A1</h2>
         </div>
       </div>

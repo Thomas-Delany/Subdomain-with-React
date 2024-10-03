@@ -80,8 +80,8 @@ const Curriculum = () => {
 
             {/* Right Inner Div for Bullet Points */}
             <div className="bg-white p-4 rounded-xl w-full text-black">
-              <h1 className="text-2xl font-bold mb-4 text-center font-dosis">{unit.title}</h1>
-                <ul className="list-disc pl-5 space-y-2 text-lg font-semibold">
+              <h2 className="text-2xl font-bold mb-4 text-center font-roboto">{unit.title}</h2>
+                <ul className="list-disc pl-5 space-y-2 text-lg font-semibold font-roboto">
                   {unit.listItems.map((item, i) => (
                     <li key={i}>{item}</li>
                   ))}
@@ -96,3 +96,7 @@ const Curriculum = () => {
 };
 
 export default Curriculum;
+
+
+
+

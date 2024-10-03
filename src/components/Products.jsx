@@ -7,96 +7,84 @@ const products = [
     href: "/courses/A1/BreakThrough",
     description: "A1 —  BreakThrough",
     imageSrc: "src/assets/A1.png",
-    imageAlt:
-      "Tall slender porcelain bottle with natural clay textured body and cork stopper.",
+    imageAlt: "A1 BreakThrough",
   },
   {
     id: 2,
     href: "/courses/A2/WayStage",
-    description: "A2 —  WayStage",
+    description: "A2 — WayStage",
     imageSrc: "src/assets/A2.png",
-    imageAlt:
-      "Olive drab green insulated bottle with flared screw lid and flat top.",
+    imageAlt: "A2 WayStage",
   },
   {
     id: 3,
     href: "/courses/B1/ThresHold",
     description: "B1 —  ThresHold",
     imageSrc: "src/assets/B1.png",
-    imageAlt:
-      "Person using a pen to cross a task off a productivity paper card.",
+    imageAlt: "B1 ThresHold",
   },
   {
     id: 4,
     href: "/courses/B2/Vantage",
     description: "B2 —  Vantage",
     imageSrc: "src/assets/B2.png",
-    imageAlt:
-      "Person using a pen to cross a task off a productivity paper card.",
+    imageAlt: "B2 Vantage",
   },
   {
     id: 5,
     href: "/courses/C1/Advanced",
     description: "C1 —  Advanced",
     imageSrc: "src/assets/C1.png",
-    imageAlt:
-      "Hand holding black machined steel mechanical pencil with brass tip and top.",
+    imageAlt: "C1 Advanced",
   },
   {
     id: 6,
     href: "/courses/C2/Mastery",
     description: "C2 —  Mastery",
     imageSrc: "src/assets/C2.png",
-    imageAlt:
-      "Person using a pen to cross a task off a productivity paper card.",
+    imageAlt: "C2 Mastery",
   },
   {
     id: 7,
     href: "/courses/B2CambridgeFirst",
     description: "Pass the B2 Cambrdige Exam!",
     imageSrc: "src/assets/b2_first.png",
-    imageAlt:
-      "Tall slender porcelain bottle with natural clay textured body and cork stopper.",
+    imageAlt: "B2 Cambrdige",
   },
   {
     id: 8,
     href: "/courses/C1CambridgeAdvanced",
     description: "Pass the C1 Cambrdige Exam!",
     imageSrc: "src/assets/c1_advanced.png",
-    imageAlt:
-      "Olive drab green insulated bottle with flared screw lid and flat top.",
+    imageAlt: "C1 Cambrdige",
   },
   {
     id: 9,
     href: "/courses/C2CambridgeProficiency",
     description: "Pass the C2 Cambrdige Exam",
     imageSrc: "src/assets/c2_pro.png",
-    imageAlt:
-      "Person using a pen to cross a task off a productivity paper card.",
+    imageAlt: "C2 Cambrdige",
   },
   {
     id: 10,
-    href: "/courses/GramaticaEsencial",
+    href: "/courses/PronunciacionEnIngles",
     description: "Learn all about English Pronunciation",
     imageSrc: "src/assets/pronunciacion-en-ingles.png",
-    imageAlt:
-      "Person using a pen to cross a task off a productivity paper card.",
+    imageAlt: "English Pronunciation",
   },
   {
     id: 11,
-    href: "/courses/VerbosEnIngles",
+    href: "/courses/GramaticaEsencial",
     description: "Learn the Essentials of English Grammar",
     imageSrc: "src/assets/Gramatica-esencial.png",
-    imageAlt:
-      "Hand holding black machined steel mechanical pencil with brass tip and top.",
+    imageAlt: "English Grammar",
   },
   {
     id: 12,
-    href: "/courses/PronunciacionEnIngles",
+    href: "/courses/VerbosEnIngles",
     description: "Auxiliaries, Modals, Copulas, Active & Passive Voice, Get...",
     imageSrc: "src/assets/verbos-en-ingles.png",
-    imageAlt:
-      "Person using a pen to cross a task off a productivity paper card.",
+    imageAlt: "English verbs",
   },
   // More products...
 ];
@@ -131,7 +119,7 @@ function Products() {
                 </div>
                 <div className="mt-0 w-full rounded-lg">
                   <div className="w-8/12 mx-auto">
-                    <p className="py-8 text-lg font-bold text-black text-center">
+                    <p className="py-8 text-lg font-bold font-roboto text-black text-center">
                       {product.description}
                     </p>
                   </div>

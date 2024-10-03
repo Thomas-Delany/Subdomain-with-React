@@ -8,21 +8,21 @@ function Hero() {
           <h1 className="max-w-2xl mb-5 text-5xl tracking-normal md:text-5xl xl:text-5xl text-black font-black font-dosis text-center md:text-left">
             Learn English with Fun, Structure and Ease!
           </h1>
-          <p className="hidden md:block max-w-2xl mb-4 font-light font-dosis text-gray-950 lg:mb-8 md:text-lg lg:text-xl text-left">
+          <p className="hidden md:block max-w-2xl mb-4 font-light font-roboto text-gray-950 lg:mb-8 md:text-lg lg:text-xl text-left">
             Video Based Lessons with Interactive Exercises and Structure, all of
             which follows the Common European Framework of Reference for
             Languages.
           </p>
-          <div className="space-x-2 text-center md:text-left">
+          <div className="space-x-2 text-center md:text-left pt-5 md:pt-1">
             <button
               type="button"
-              className="w-32 h-12 focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
+              className="w-32 h-12 focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 font-semibold"
             >
               Level Test
             </button>
             <button
               type="button"
-              class="w-32 h-12 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2"
+              class="w-32 h-12 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 font-semibold"
             >
               Log in
             </button>
