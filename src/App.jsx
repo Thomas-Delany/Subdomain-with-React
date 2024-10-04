@@ -23,6 +23,7 @@ import LessonPage from "./pages/lessons/LessonPage"; // Import LessonPage compon
 function App() {
   return (
     <>
+    {/* ScrollToTop ensures user is taken to top when navigating courses */}
     <ScrollToTop />
       <Navbar /> {/* Navbar stays the same for all pages */}
       <Routes>
