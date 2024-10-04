@@ -2,34 +2,37 @@ import React from "react";
 
 const NextLevel = () => {
   return (
-    <section className="px-4 py-8 antialiased bg-greenAone md:py-16">
-      <div className="mx-auto grid max-w-screen-xl rounded-lg p-4 md:p-8 lg:grid-cols-12 lg:gap-6 lg:p-16 xl:gap-16 flex justify-center items-center text-center">
-        <div className="lg:col-span-4 lg:mt-0 bg-black flex justify-center items-center mx-auto">
-          <a href="#">
-            <img
-              className="mb-4 rounded-md"
-              src="../../src/assets/A2.png"
-              alt="A2"
-            />
-          </a>
+    <section className="bg-greenAone">
+      <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:grid-cols-12 lg:py-16 flex justify-between items-center">
+
+      <div className="lg:col-span-6 lg:flex justify-center items-center mx-auto">
+          <img
+            src="../../src/assets/A2.png"
+            className="mx-auto rounded-md"
+            alt="A2"
+          ></img>
         </div>
 
-        <div className="lg:col-span-8 flex flex-col bg-black mr-auto">
-          <div className="flex flex-col justify-center items-center lg:items-start">
-            <h1 className="mb-3 text-2xl font-bold leading-tight tracking-tight text-white md:text-4xl font-dosis">
-              Time to level up!
-            </h1>
-            <p className="mb-6 text-white font-semibold font-roboto hidden lg:block">
-              Get started with A2 — WayStage to continue improving.
-            </p>
+
+
+        <div className="mr-auto lg:col-span-6 mx-auto p-6 sm:flex sm:flex-col">
+          <h1 className="max-w-2xl mb-5 text-5xl tracking-normal md:text-5xl xl:text-5xl text-white font-black font-dosis text-center lg:text-left">
+          Time to level up!
+          </h1>
+          <p className="hidden md:block max-w-2xl mb-4 font-bold font-roboto text-white lg:mb-8 md:text-lg lg:text-xl text-left">
+          Get started with A2 — WayStage to continue improving.
+          </p>
+          <div className="space-x-2 text-center lg:text-left pt-5 md:pt-1">
             <button
               type="button"
-              className="w-32 h-12 text-black bg-white font-medium rounded-lg text-sm px-5 py-3"
+              className="w-32 h-12 focus:outline-none text-black bg-white font-medium font-dosis rounded-lg text-lg px-5 py-2.5 me-2 mb-2 font-semibold"
             >
               Begin!
             </button>
           </div>
         </div>
+
+        
       </div>
     </section>
   );

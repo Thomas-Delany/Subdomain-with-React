@@ -78,7 +78,7 @@ const Curriculum = () => {
 
         {curriculumData.map((unit, index) => (
           <div key={index} className="grid place-items-center py-8 px-8">
-            <h2 className="text-2xl font-bold mb-4 text-center text-white font-dosis">
+            <h2 className="text-3xl font-bold mb-4 text-center text-white font-dosis">
               {unit.title}
             </h2>
             <div className="flex items-center justify-center w-10/12 rounded-3xl p-8 bg-[#5C67B6]">
@@ -89,7 +89,7 @@ const Curriculum = () => {
 
               {/* Right Inner Div for Bullet Points */}
               <div className="p-4 rounded-xl w-full text-white bg-[#5C67B6]">
-                <ul className="list-disc pl-5 space-y-2 text-lg font-semibold font-dosis">
+                <ul className="list-disc pl-5 space-y-2 text-xl font-semibold font-dosis">
                   {unit.listItems.map((item, i) => (
                     <li key={i}>{item}</li>
                   ))}

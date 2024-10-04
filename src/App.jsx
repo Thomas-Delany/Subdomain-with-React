@@ -1,4 +1,6 @@
-import { Routes, Route } from "react-router-dom";
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import ScrollToTop from './components/ScrollToTop';
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Products from "./components/Products";
@@ -21,6 +23,7 @@ import LessonPage from "./pages/lessons/LessonPage"; // Import LessonPage compon
 function App() {
   return (
     <>
+    <ScrollToTop />
       <Navbar /> {/* Navbar stays the same for all pages */}
       <Routes>
         {/* Route for the Home page */}
@@ -55,7 +58,8 @@ function App() {
           element={<LessonPage />}
         />
       </Routes>
-      <Footer /> {/* Footer stays the same for all pages */}
+      <Footer />
+       {/* Footer stays the same for all pages */}
     </>
   );
 }
