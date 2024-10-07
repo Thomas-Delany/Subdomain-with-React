@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className="bg-white dark:bg-gray-900">
+    <footer className="bg-[#FDF1BB]">
       <div className="mx-auto w-full max-w-screen-xl p-4 p-12 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
@@ -186,7 +186,10 @@ function Footer() {
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
             © 2024{" "}
-            <a href="https://englishreservoir.co.uk/" className="hover:underline">
+            <a
+              href="https://englishreservoir.co.uk/"
+              className="hover:underline"
+            >
               English Reservoir™
             </a>
             . All Rights Reserved.
