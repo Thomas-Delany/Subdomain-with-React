@@ -8,7 +8,7 @@ const NextLevel = () => {
       <div className="lg:col-span-6 lg:flex justify-center items-center mx-auto">
           <img
             src="../../src/assets/A2.png"
-            className="mx-auto rounded-md"
+            className="mx-auto rounded-3xl"
             alt="A2"
           ></img>
         </div>

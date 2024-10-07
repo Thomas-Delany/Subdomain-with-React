@@ -3,13 +3,15 @@ import {
   FaCheckCircle,
   FaBook,
   FaGraduationCap,
-  FaChalkboardTeacher,
 } from "react-icons/fa";
 import { TfiBlackboard } from "react-icons/tfi";
+import { LiaDumbbellSolid } from "react-icons/lia";
+import { GiJourney, GiChampions } from "react-icons/gi";
+import { IoStar } from "react-icons/io5";
 
 const curriculumData = [
   {
-    icon: TfiBlackboard,
+    icon: GiJourney,
     title: "UNIT 1",
     listItems: [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
@@ -21,7 +23,7 @@ const curriculumData = [
     ],
   },
   {
-    icon: FaChalkboardTeacher,
+    icon: TfiBlackboard,
     title: "UNIT 2",
     listItems: [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
@@ -30,7 +32,7 @@ const curriculumData = [
     ],
   },
   {
-    icon: FaBook,
+    icon: LiaDumbbellSolid,
     title: "UNIT 3",
     listItems: [
       "Curabitur vehicula mi at fringilla eleifend.",
@@ -39,7 +41,7 @@ const curriculumData = [
     ],
   },
   {
-    icon: FaGraduationCap,
+    icon: IoStar,
     title: "UNIT 4",
     listItems: [
       "Quisque scelerisque diam ut urna.",
@@ -57,7 +59,7 @@ const curriculumData = [
     ],
   },
   {
-    icon: FaGraduationCap,
+    icon: GiChampions,
     title: "UNIT 6",
     listItems: [
       "Quisque scelerisque diam ut urna.",
@@ -84,7 +86,7 @@ const Curriculum = () => {
             <div className="flex items-center justify-center w-10/12 rounded-3xl p-8 bg-[#5C67B6]">
               {/* Left Inner Div for Icon */}
               <div className="hidden md:flex justify-center items-center bg-white rounded-full p-4 mr-6">
-                <unit.icon className="text-[#5C67B6] text-6xl md:text-7xl lg:text-8xl" />
+                <unit.icon className="text-[#5C67B6] text-6xl md:text-5xl lg:text-6xl" />
               </div>
 
               {/* Right Inner Div for Bullet Points */}
