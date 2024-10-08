@@ -76,16 +76,16 @@ const products = [
 
 const CoursesDisplay = () => {
   return (
-    <div className="bg-greenAone flex items-center justify-center">
+    <div className="bg-[#e2edf1] flex items-center justify-center">
       <div className="mx-auto max-w-2xl px-16 py-6 sm:px-6 sm:py-24 md:pt-4 lg:max-w-7xl lg:px-8">
-        <h2 className="text-5xl text-center font-bold text-white leading-tight font-dosis pb-8">Ensure you keep progressing</h2>
+        <h2 className="text-5xl text-center font-bold text-[#1b3679] leading-tight font-dosis pb-8 pt-8">Ensure you keep progressing</h2>
         <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 xl:gap-x-8 py-4">
           {products.map((product, index) => (
             <>
               {/* Insert an H3 header before course 7 */}
               {index === 4 && (
-                <div className="col-span-full flex justify-center items-center pt-8">
-                  <h2 className="text-5xl text-center font-bold text-white leading-tight font-dosis">
+                <div className="col-span-full flex justify-center items-center">
+                  <h2 className="text-5xl text-center font-bold text-[#1b3679] leading-tight font-dosis pb-8 pt-8">
                     Specialized Courses
                   </h2>
                 </div>
@@ -105,7 +105,7 @@ const CoursesDisplay = () => {
                 </div>
                 <div className="mt-0 w-full rounded-lg">
                   <div className="w-8/12 mx-auto">
-                    <p className="py-8 text-lg font-bold text-black text-center">
+                    <p className="py-8 text-lg font-semibold text-[#1b3679] font-dosis text-center text-xl">
                       {product.description}
                     </p>
                   </div>

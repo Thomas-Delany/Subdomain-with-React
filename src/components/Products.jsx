@@ -91,7 +91,7 @@ const products = [
 
 function Products() {
   return (
-    <div className="bg-green-700 min-h-screen flex items-center justify-center">
+    <div className="bg-[#00C699] min-h-screen flex items-center justify-center">
       <div className="mx-auto max-w-2xl px-16 py-2 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
         <h2 className="sr-only">Products</h2>
         <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-8 py-4">
@@ -119,7 +119,7 @@ function Products() {
                 </div>
                 <div className="mt-0 w-full rounded-lg">
                   <div className="w-8/12 mx-auto">
-                    <p className="py-8 text-lg font-bold font-roboto text-black text-center">
+                    <p className="py-8 text-xl font-bold font-dosis text-[#1b3679] text-center">
                       {product.description}
                     </p>
                   </div>

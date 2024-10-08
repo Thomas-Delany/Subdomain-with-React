@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 
 function FreeCourse() {
   return (
-    <div className="bg-green-700 py-4 pb-32 flex items-center justify-center">
+    <div className="bg-[#e2edf1] py-4 pb-32 flex items-center justify-center">
       <div className="mx-auto max-w-2xl px-16 py-4 sm:px-6 sm:py-4 lg:max-w-3xl lg:px-8">
         <div className="flex justify-center items-center py-8">
-          <h1 className="text-5xl text-center font-bold text-white font-dosis leading-tight">
+          <h1 className="text-5xl text-center font-bold text-[#1b3679] font-dosis leading-tight">
             Take our free English course!
           </h1>
         </div>
@@ -23,7 +23,7 @@ function FreeCourse() {
 
             <div className="mt-0 w-full rounded-lg">
               <div className="w-8/12 mx-auto">
-                <p className="py-8 text-lg font-bold text-black text-center">
+                <p className="py-8 text-xl font-semibold font-dosis text-[#1b3679] text-center">
                   Start learning now for Free and get to know about our Teaching
                   Method.
                 </p>
