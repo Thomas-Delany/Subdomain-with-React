@@ -6,42 +6,42 @@ const products = [
     id: 1,
     href: "/courses/A1/BreakThrough",
     description: "A1 —  BreakThrough",
-    imageSrc: "src/assets/A1.png",
+    imageSrc: "src/assets/A1-new.png",
     imageAlt: "A1 BreakThrough",
   },
   {
     id: 2,
     href: "/courses/A2/WayStage",
     description: "A2 — WayStage",
-    imageSrc: "src/assets/A2.png",
+    imageSrc: "src/assets/A2-new.png",
     imageAlt: "A2 WayStage",
   },
   {
     id: 3,
     href: "/courses/B1/ThresHold",
     description: "B1 —  ThresHold",
-    imageSrc: "src/assets/B1.png",
+    imageSrc: "src/assets/B1-new.png",
     imageAlt: "B1 ThresHold",
   },
   {
     id: 4,
     href: "/courses/B2/Vantage",
     description: "B2 —  Vantage",
-    imageSrc: "src/assets/B2.png",
+    imageSrc: "src/assets/B2-new.png",
     imageAlt: "B2 Vantage",
   },
   {
     id: 5,
     href: "/courses/C1/Advanced",
     description: "C1 —  Advanced",
-    imageSrc: "src/assets/C1.png",
+    imageSrc: "src/assets/C1-new.png",
     imageAlt: "C1 Advanced",
   },
   {
     id: 6,
     href: "/courses/C2/Mastery",
     description: "C2 —  Mastery",
-    imageSrc: "src/assets/C2.png",
+    imageSrc: "src/assets/C2-new.png",
     imageAlt: "C2 Mastery",
   },
   {
@@ -119,7 +119,7 @@ function Products() {
                 </div>
                 <div className="mt-0 w-full rounded-lg">
                   <div className="w-8/12 mx-auto">
-                    <p className="py-8 text-xl font-bold font-dosis text-[#1b3679] text-center">
+                    <p className="py-8 text-xl font-bold font-dosis text-[#1C4F59] text-center">
                       {product.description}
                     </p>
                   </div>
