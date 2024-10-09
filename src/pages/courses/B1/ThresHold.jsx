@@ -1,10 +1,16 @@
-import React from "react";
+import React from "react"; 
+import Hero from "./Hero";
+import Curriculum from "./Curriculum";
+import NextLevel from "./NextLevel";
+import CoursesDisplay from "./CoursesDisplay";
 
 const ThresHold = () => {
   return (
     <div>
-      <h1>B1 Course</h1>
-      {/* Add content for the A1 course */}
+     <Hero />
+     <Curriculum />
+     <NextLevel />
+     <CoursesDisplay /> 
     </div>
   );
 };
