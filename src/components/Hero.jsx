@@ -6,7 +6,7 @@ function Hero() {
     <section className="bg-white">
       <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:grid-cols-12 lg:py-16 flex justify-between items-center">
         <div className="mr-auto lg:col-span-6 mx-auto p-6 sm:flex sm:flex-col">
-          <h1 className="max-w-2xl mb-5 text-5xl tracking-normal leading-tight text-black text-[#1C4F59] font-bold font-dosis text-center md:text-left">
+          <h1 className="max-w-2xl mb-5 text-5xl tracking-normal leading-tight text-[#1C4F59] font-bold font-dosis text-center md:text-left">
             Learn English with Fun, Structure and Ease!
           </h1>
           <p className="hidden md:block max-w-2xl mb-4 font-light font-roboto text-gray-950 lg:mb-8 md:text-lg lg:text-xl text-left">
@@ -34,10 +34,10 @@ function Hero() {
           </div>
         </div>
 
-        <div className="hidden lg:col-span-6 lg:flex justify-center items-center mx-auto">
+        <div className="hidden lg:col-span-6 lg:flex justify-center items-center mx-auto h-80">
           <img
             src="/src/assets/category-2.svg"
-            className=""
+            className="w-full h-full object-contain"
             alt="english courses"
           ></img>
         </div>
