@@ -8,10 +8,10 @@ const Hero = () => {
           <h1 className="max-w-2xl mb-5 tracking-normal text-4xl md:text-5xl text-[#ffd500] font-bryndan font-bold pb-4 text-center md:text-left">
             C1 — Advanced
           </h1>
-          <p className="max-w-2xl mb-4 font-black lg:mb-4 text-2xl md:text-3xl text-[#1C4F59] text-left font-dosis">
+          <p className="max-w-2xl mb-4 font-black lg:mb-4 text-2xl md:text-3xl text-[#fff] text-left font-dosis">
             What you will learn
           </p>
-          <ul className="list-disc text-[#1C4F59] text-left font-dosis font-semibold text-xl md:text-2xl">
+          <ul className="list-disc text-[#fff] text-left font-dosis font-semibold text-xl md:text-2xl">
             <li>
               Understand beginner grammar concepts such as the Present Simple
               and Present Perfect.
@@ -23,7 +23,7 @@ const Hero = () => {
           <div className="text-center md:text-left pt-8">
             <button
               type="button"
-              className="w-32 h-12 text-black bg-[#ffd500] font-bold font-dosis rounded-lg text-lg px-5 py-2.5 me-2 mb-2"
+              className="w-32 h-12 text-[#628b61] bg-[#ffd500] font-bold font-dosis rounded-lg text-lg px-5 py-2.5 me-2 mb-2"
             >
               Begin!
             </button>

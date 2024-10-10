@@ -6,7 +6,7 @@ const NextLevel = () => {
     <section className="bg-[#c7e1ba]">
       <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:grid-cols-12 lg:py-16 flex justify-between items-center">
         <div className="lg:col-span-6 lg:flex justify-center items-center mx-auto">
-          <Link to="/courses/A2/WayStage">
+          <Link to="/courses/B2/Vantage">
             <img
               src="../../src/assets/B2-new.png"
               className="mx-auto rounded-3xl"
