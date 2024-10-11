@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+const baseUrl = import.meta.env.VITE_BASE_URL;
 
 function Hero() {
   return (
@@ -15,7 +16,7 @@ function Hero() {
             Languages.
           </p>
           <div className="space-x-2 text-center md:text-left pt-5 md:pt-1">
-            <Link to="#">
+            <Link to={`${baseUrl}`}>
               <button
                 type="button"
                 className="w-32 h-12 focus:outline-none text-white hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 bg-[#00C699] font-semibold"
@@ -23,7 +24,7 @@ function Hero() {
                 Level Test
               </button>
             </Link>
-            <Link to="#">
+            <Link to={`${baseUrl}`}>
               <button
                 type="button"
                 class="w-32 h-12 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 font-semibold text-[#1b3679]"

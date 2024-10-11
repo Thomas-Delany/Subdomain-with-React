@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
+const baseUrl = import.meta.env.VITE_BASE_URL;
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,11 +11,13 @@ function Navbar() {
         <div className="relative flex items-center justify-between h-24">
           {/* Centered logo on mobile screens */}
           <div className="flex-shrink-0 mx-auto sm:mx-0">
-            <img
-              className="h-8 w-auto"
-              src="src/assets/LOGO-LIGHT.png"
-              alt="Logo"
-            />
+            <Link to={`${baseUrl}`}>
+              <img
+                className="h-8 w-auto"
+                src="src/assets/LOGO-LIGHT.png"
+                alt="Logo"
+              />
+            </Link>
           </div>
 
           {/* Links on the right */}
