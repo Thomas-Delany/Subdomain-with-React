@@ -1,31 +1,32 @@
 import React from "react";
 import { Link } from "react-router-dom";
+const baseUrl = import.meta.env.VITE_BASE_URL;
 
 const products = [
   {
     id: 1,
-    href: "/courses/B1/ThresHold",
+    href: `${baseUrl}courses/B1/ThresHold`,
     description: "B1 —  ThresHold",
     imageSrc: "../../src/assets/B1-new.png",
     imageAlt: "B1 ThresHold",
   },
   {
     id: 2,
-    href: "/courses/B2/Vantage",
+    href: `${baseUrl}courses/B2/Vantage`,
     description: "B2 —  Vantage",
     imageSrc: "../../src/assets/B2-new.png",
     imageAlt: "B2 Vantage",
   },
   {
     id: 3,
-    href: "/courses/C1/Advanced",
+    href: `${baseUrl}courses/C1/Advanced`,
     description: "C1 —  Advanced",
     imageSrc: "../../src/assets/C1-new.png",
     imageAlt: "C1 Advanced",
   },
   {
     id: 4,
-    href: "/courses/C2/Mastery",
+    href: `${baseUrl}courses/C2/Mastery`,
     description: "C2 —  Mastery",
     imageSrc: "../../src/assets/C2-new.png",
     imageAlt: "C2 Mastery",
@@ -60,7 +61,7 @@ const products = [
   },
   {
     id: 9,
-    href: "/courses/GramaticaEsencial", 
+    href: "/courses/GramaticaEsencial",
     description: "Learn the Essentials of English Grammar",
     imageSrc: "../../src/assets/Gramatica-esencial.png",
     imageAlt: "English Grammar",
@@ -78,7 +79,9 @@ const CoursesDisplay = () => {
   return (
     <div className="bg-[#e2edf1] flex items-center justify-center">
       <div className="mx-auto max-w-2xl px-16 py-6 sm:px-6 sm:py-24 md:pt-4 lg:max-w-7xl lg:px-8">
-        <h2 className="text-5xl text-center font-bold text-[#1b3679] leading-tight font-dosis pb-8 pt-8">Ensure you keep progressing</h2>
+        <h2 className="text-5xl text-center font-bold text-[#1b3679] leading-tight font-dosis pb-8 pt-8">
+          Ensure you keep progressing
+        </h2>
         <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 xl:gap-x-8 py-4">
           {products.map((product, index) => (
             <>
@@ -95,7 +98,6 @@ const CoursesDisplay = () => {
                 to={product.href} // Change href to to for react-router
                 className="group bg-white rounded-lg"
               >
-
                 <div className="w-full overflow-hidden rounded-t-lg">
                   <img
                     alt={product.imageAlt}
@@ -116,7 +118,7 @@ const CoursesDisplay = () => {
         </div>
       </div>
     </div>
-  )
+  );
 };
 
 export default CoursesDisplay;

@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+const baseUrl = import.meta.env.VITE_BASE_URL;
 
 const products = [
   {
     id: 1,
-    href: "/courses/C2/Mastery",
+    href: `${baseUrl}courses/C2/Mastery`,
     description: "C2 —  Mastery",
     imageSrc: "../../src/assets/C2-new.png",
     imageAlt: "C2 Mastery",
@@ -39,7 +40,7 @@ const products = [
   },
   {
     id: 6,
-    href: "/courses/GramaticaEsencial", 
+    href: "/courses/GramaticaEsencial",
     description: "Learn the Essentials of English Grammar",
     imageSrc: "../../src/assets/Gramatica-esencial.png",
     imageAlt: "English Grammar",
@@ -57,7 +58,6 @@ const CoursesDisplay = () => {
   return (
     <div className="bg-[#e2edf1] flex items-center justify-center">
       <div className="mx-auto max-w-2xl px-16 py-6 sm:px-6 sm:py-24 md:pt-4 lg:max-w-7xl lg:px-8">
-        
         {/* Second section: Render the rest of the products from index 1 onwards */}
         <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-8 py-4">
           {products.slice(1).map((product, index) => (
@@ -70,10 +70,7 @@ const CoursesDisplay = () => {
                   </h2>
                 </div>
               )}
-              <Link
-                to={product.href}
-                className="group bg-white rounded-lg"
-              >
+              <Link to={product.href} className="group bg-white rounded-lg">
                 <div className="w-full overflow-hidden rounded-t-lg">
                   <img
                     alt={product.imageAlt}

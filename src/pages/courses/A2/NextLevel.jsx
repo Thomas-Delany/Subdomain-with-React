@@ -1,12 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+const baseUrl = import.meta.env.VITE_BASE_URL;
 
 const NextLevel = () => {
   return (
     <section className="bg-[#f3d5bd]">
       <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:grid-cols-12 lg:py-16 flex justify-between items-center">
         <div className="lg:col-span-6 lg:flex justify-center items-center mx-auto">
-          <Link to="/courses/B1/ThresHold">
+          <Link to={`${baseUrl}courses/B1/ThresHold`}>
             <img
               src="../../src/assets/B1-new.png"
               className="mx-auto rounded-3xl"
@@ -23,13 +24,13 @@ const NextLevel = () => {
             Get started with B1 — ThresHold to continue improving.
           </p>
           <div className="space-x-2 text-center lg:text-left pt-5 md:pt-1">
-            <Link to="#">
+            <Link to={`${baseUrl}courses/B1/ThresHold`}>
               <button
                 type="button"
                 className="w-32 h-12 focus:outline-none font-dosis rounded-lg text-xl px-5 py-2.5 me-2 mb-2 text-[#1C4F59] bg-[#fab51a] font-bold"
               >
                 Begin!
-              </button> 
+              </button>
             </Link>
           </div>
         </div>

@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+const baseUrl = import.meta.env.VITE_BASE_URL;
 
 const Hero = () => {
   return (
@@ -21,16 +23,20 @@ const Hero = () => {
             <li>Ask personal questions</li>
           </ul>
           <div className="text-center md:text-left pt-8">
-            <button
-              type="button"
-              className="w-32 h-12 text-[#1C4F59] bg-[#fab51a] font-bold font-dosis rounded-lg text-lg px-5 py-2.5 me-2 mb-2"
-            >
-              Begin!
-            </button>
+            <Link to={`${baseUrl}`}>
+              <button
+                type="button"
+                className="w-32 h-12 text-[#1C4F59] bg-[#fab51a] font-bold font-dosis rounded-lg text-lg px-5 py-2.5 me-2 mb-2"
+              >
+                Begin!
+              </button>
+            </Link>
           </div>
         </div>
         <div className="hidden lg:col-span-5 lg:flex justify-center items-center mx-auto h-[400px]">
-          <h2 className="font-bryndan font-black text-[#fab51a] text-[350px]">A2</h2>
+          <h2 className="font-bryndan font-black text-[#fab51a] text-[350px]">
+            A2
+          </h2>
         </div>
       </div>
     </section>

@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+const baseUrl = import.meta.env.VITE_BASE_URL;
 
 const products = [
   {
     id: 1,
-    href: "/courses/C2/Mastery",
+    href: `${baseUrl}courses/C2/Mastery`,
     description: "C2 —  Mastery",
     imageSrc: "../../src/assets/C2-new.png",
     imageAlt: "C2 Mastery",
@@ -39,7 +40,7 @@ const products = [
   },
   {
     id: 6,
-    href: "/courses/GramaticaEsencial", 
+    href: "/courses/GramaticaEsencial",
     description: "Learn the Essentials of English Grammar",
     imageSrc: "../../src/assets/Gramatica-esencial.png",
     imageAlt: "English Grammar",
@@ -60,7 +61,7 @@ const CoursesDisplay = () => {
         <h2 className="text-5xl text-center font-bold text-[#1b3679] leading-tight font-dosis pb-8 pt-8">
           Ensure you keep progressing
         </h2>
-        
+
         {/* First section: Render the product with index 0 in its own centered grid */}
         <div className="grid grid-cols-1 place-items-center py-4">
           {products.slice(0, 1).map((product) => (
@@ -99,10 +100,7 @@ const CoursesDisplay = () => {
                   </h2>
                 </div>
               )}
-              <Link
-                to={product.href}
-                className="group bg-white rounded-lg"
-              >
+              <Link to={product.href} className="group bg-white rounded-lg">
                 <div className="w-full overflow-hidden rounded-t-lg">
                   <img
                     alt={product.imageAlt}
