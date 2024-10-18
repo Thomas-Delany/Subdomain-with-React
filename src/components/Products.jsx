@@ -5,7 +5,7 @@ const baseUrl = import.meta.env.VITE_BASE_URL;
 const products = [
   {
     id: 1,
-    href: `${baseUrl}courses/A1/BreakThrough`,
+    href: `courses/A1/BreakThrough`,
     description: "A1 —  BreakThrough",
     imageSrc: "src/assets/A1-new.png",
     imageAlt: "A1 BreakThrough",
