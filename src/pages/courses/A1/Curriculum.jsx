@@ -1,9 +1,6 @@
 import React from "react";
-import {
-  FaCheckCircle,
-  FaBook,
-  FaGraduationCap,
-} from "react-icons/fa";
+import { Link } from "react-router-dom";
+import { FaCheckCircle, FaBook, FaGraduationCap } from "react-icons/fa";
 import { TfiBlackboard } from "react-icons/tfi";
 import { LiaDumbbellSolid } from "react-icons/lia";
 import { GiJourney, GiChampions } from "react-icons/gi";
