@@ -1,6 +1,6 @@
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
-import ScrollToTop from './components/ScrollToTop';
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Products from "./components/Products";
@@ -18,13 +18,13 @@ import C2CambridgeProficiency from "./pages/courses/C2CambridgeProficiency";
 import GramaticaEsencial from "./pages/courses/GramaticaEsencial";
 import VerbosEnIngles from "./pages/courses/VerbosEnIngles";
 import PronunciacionEnIngles from "./pages/courses/PronunciacionEnIngles";
-import LessonPage from "./pages/lessons/LessonPage"; // Import LessonPage component
+import LessonPage from "./pages/LessonPage"; // Import LessonPage component
 
 function App() {
   return (
     <>
-    {/* ScrollToTop ensures user is taken to top when navigating courses */}
-    <ScrollToTop />
+      {/* ScrollToTop ensures user is taken to top when navigating courses */}
+      <ScrollToTop />
       <Navbar /> {/* Navbar stays the same for all pages */}
       <Routes>
         {/* Route for the Home page */}
@@ -46,21 +46,33 @@ function App() {
         <Route path="/courses/B2/Vantage" element={<Vantage />} />
         <Route path="/courses/C1/Advanced" element={<Advanced />} />
         <Route path="/courses/C2/Mastery" element={<Mastery />} />
-        <Route path="/courses/B2CambridgeFirst" element={<B2CambridgeFirst />} />
-        <Route path="/courses/C1CambridgeAdvanced" element={<C1CambridgeAdvanced />} />
-        <Route path="/courses/C2CambridgeProficiency" element={<C2CambridgeProficiency />} />
-        <Route path="/courses/GramaticaEsencial" element={<GramaticaEsencial />} />
+        <Route
+          path="/courses/B2CambridgeFirst"
+          element={<B2CambridgeFirst />}
+        />
+        <Route
+          path="/courses/C1CambridgeAdvanced"
+          element={<C1CambridgeAdvanced />}
+        />
+        <Route
+          path="/courses/C2CambridgeProficiency"
+          element={<C2CambridgeProficiency />}
+        />
+        <Route
+          path="/courses/GramaticaEsencial"
+          element={<GramaticaEsencial />}
+        />
         <Route path="/courses/VerbosEnIngles" element={<VerbosEnIngles />} />
-        <Route path="/courses/PronunciacionEnIngles" element={<PronunciacionEnIngles />} />
+        <Route
+          path="/courses/PronunciacionEnIngles"
+          element={<PronunciacionEnIngles />}
+        />
 
         {/* Route for individual lesson pages */}
-        <Route
-          path="/courses/:courseId/lesson/:lessonId"
-          element={<LessonPage />}
-        />
+        <Route path="/lessons/:course/:unit/:lesson" element={<LessonPage />} />
       </Routes>
       <Footer />
-       {/* Footer stays the same for all pages */}
+      {/* Footer stays the same for all pages */}
     </>
   );
 }

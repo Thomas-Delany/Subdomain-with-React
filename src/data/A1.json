@@ -1,111 +1,30 @@
 {
-  "course": "A1",
   "units": [
     {
-      "unitNumber": 1,
-      "unitTitle": "Unit 1: Introduction",
+      "unit": "Unit1",
       "lessons": [
         {
-          "lessonNumber": 1,
-          "title": "Lesson 1: Basics of English",
-          "content": "This is the content of Lesson 1.",
-          "videoURL": "https://example.com/video1"
+          "id": "Lesson1",
+          "title": "Introduction to A1",
+          "content": "This is the content for Lesson 1 in Unit 1 of A1.",
+          "exercises": ["Exercise 1", "Exercise 2"]
         },
         {
-          "lessonNumber": 2,
-          "title": "Lesson 2: Simple Sentences",
-          "content": "This is the content of Lesson 2.",
-          "videoURL": "https://example.com/video2"
+          "id": "Lesson2",
+          "title": "Lesson 2 Title",
+          "content": "This is the content for Lesson 2 in Unit 1 of A1.",
+          "exercises": ["Exercise 1", "Exercise 2"]
         }
       ]
     },
     {
-      "unitNumber": 2,
-      "unitTitle": "Unit 2: Grammar Basics",
+      "unit": "Unit2",
       "lessons": [
         {
-          "lessonNumber": 1,
-          "title": "Lesson 1: Nouns and Pronouns",
-          "content": "This is the content of Lesson 1.",
-          "videoURL": "https://example.com/video3"
-        },
-        {
-          "lessonNumber": 2,
-          "title": "Lesson 2: Verbs and Tenses",
-          "content": "This is the content of Lesson 2.",
-          "videoURL": "https://example.com/video4"
-        }
-      ]
-    },
-    {
-      "unitNumber": 3,
-      "unitTitle": "Unit 3: Grammar Basics",
-      "lessons": [
-        {
-          "lessonNumber": 1,
-          "title": "Lesson 1: Nouns and Pronouns",
-          "content": "This is the content of Lesson 1.",
-          "videoURL": "https://example.com/video3"
-        },
-        {
-          "lessonNumber": 2,
-          "title": "Lesson 2: Verbs and Tenses",
-          "content": "This is the content of Lesson 2.",
-          "videoURL": "https://example.com/video4"
-        }
-      ]
-    },
-    {
-      "unitNumber": 4,
-      "unitTitle": "Unit 4: Grammar Basics",
-      "lessons": [
-        {
-          "lessonNumber": 1,
-          "title": "Lesson 1: Nouns and Pronouns",
-          "content": "This is the content of Lesson 1.",
-          "videoURL": "https://example.com/video3"
-        },
-        {
-          "lessonNumber": 2,
-          "title": "Lesson 2: Verbs and Tenses",
-          "content": "This is the content of Lesson 2.",
-          "videoURL": "https://example.com/video4"
-        }
-      ]
-    },
-    {
-      "unitNumber": 5,
-      "unitTitle": "Unit 5: Grammar Basics",
-      "lessons": [
-        {
-          "lessonNumber": 1,
-          "title": "Lesson 1: Nouns and Pronouns",
-          "content": "This is the content of Lesson 1.",
-          "videoURL": "https://example.com/video3"
-        },
-        {
-          "lessonNumber": 2,
-          "title": "Lesson 2: Verbs and Tenses",
-          "content": "This is the content of Lesson 2.",
-          "videoURL": "https://example.com/video4"
-        }
-      ]
-    },
-    {
-      "unitNumber": 6,
-      "unitTitle": "Unit 6: Grammar Basics",
-      "lessons": [
-        {
-          "lessonNumber": 1,
-          "title": "Lesson 1: Nouns and Pronouns",
-          "content": "This is the content of Lesson 1.",
-          "videoURL": "https://example.com/video3"
-        },
-        {
-          "lessonNumber": 2,
-          "title": "Lesson 2: Verbs and Tenses",
-          "content": "This is the content of Lesson 2.",
-          "videoURL": "https://example.com/video4"
+          "id": "Lesson1",
+          "title": "Lesson 1 Title",
+          "content": "This is the content for Lesson 1 in Unit 2 of A1.",
+          "exercises": ["Exercise 1", "Exercise 2"]
         }
       ]
     }
