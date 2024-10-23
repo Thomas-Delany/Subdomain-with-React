@@ -69,7 +69,10 @@ function App() {
         />
 
         {/* Route for individual lesson pages */}
-        <Route path="/lessons/:course/:unit/:lesson" element={<LessonPage />} />
+        <Route
+          path="/lessons/:course/:unit/:lessonId"
+          element={<LessonPage />}
+        />
       </Routes>
       <Footer />
       {/* Footer stays the same for all pages */}

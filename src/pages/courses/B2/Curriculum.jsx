@@ -1,9 +1,6 @@
 import React from "react";
-import {
-  FaCheckCircle,
-  FaBook,
-  FaGraduationCap,
-} from "react-icons/fa";
+import { Link } from "react-router-dom";
+import { FaCheckCircle, FaBook, FaGraduationCap } from "react-icons/fa";
 import { TfiBlackboard } from "react-icons/tfi";
 import { LiaDumbbellSolid } from "react-icons/lia";
 import { GiJourney, GiChampions } from "react-icons/gi";
@@ -13,73 +10,67 @@ const curriculumData = [
   {
     icon: GiJourney,
     title: "UNIT 1",
-    listItems: [
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    lessons: [
+      { title: "Lesson 1", path: "/lessons/B2/Unit1/Lesson1" },
+      { title: "Lesson 2", path: "/lessons/B2/Unit1/Lesson2" },
+      { title: "Lesson 3", path: "/lessons/B2/Unit1/Lesson3" },
+      { title: "Lesson 4", path: "/lessons/B2/Unit1/Lesson4" },
+      { title: "Lesson 5", path: "/lessons/B2/Unit1/Lesson5" },
     ],
   },
   {
     icon: TfiBlackboard,
     title: "UNIT 2",
-    listItems: [
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    lessons: [
+      { title: "Lesson 6", path: "/lessons/B2/Unit2/Lesson6" },
+      { title: "Lesson 7", path: "/lessons/B2/Unit2/Lesson7" },
+      { title: "Lesson 8", path: "/lessons/B2/Unit2/Lesson8" },
+      { title: "Lesson 9", path: "/lessons/B2/Unit2/Lesson9" },
+      { title: "Lesson 10", path: "/lessons/B2/Unit2/Lesson10" },
     ],
   },
   {
     icon: LiaDumbbellSolid,
     title: "UNIT 3",
-    listItems: [
-      "Vestibulum facilisis, lorem eget fringilla imperdiet.",
-      "Vestibulum facilisis, lorem eget fringilla imperdiet.",
-      "Vestibulum facilisis, lorem eget fringilla imperdiet.",
-      "Vestibulum facilisis, lorem eget fringilla imperdiet.",
-      "Vestibulum facilisis, lorem eget fringilla imperdiet.",
-      "Vestibulum facilisis, lorem eget fringilla imperdiet.",
+    lessons: [
+      { title: "Lesson 11", path: "/lessons/B2/Unit3/Lesson11" },
+      { title: "Lesson 12", path: "/lessons/B2/Unit3/Lesson12" },
+      { title: "Lesson 13", path: "/lessons/B2/Unit3/Lesson13" },
+      { title: "Lesson 14", path: "/lessons/B2/Unit3/Lesson14" },
+      { title: "Lesson 15", path: "/lessons/B2/Unit3/Lesson15" },
     ],
   },
   {
     icon: IoStar,
     title: "UNIT 4",
-    listItems: [
-      "Fusce imperdiet metus sit amet orci mollis feugiat.",
-      "Fusce imperdiet metus sit amet orci mollis feugiat.",
-      "Fusce imperdiet metus sit amet orci mollis feugiat.",
-      "Fusce imperdiet metus sit amet orci mollis feugiat.",
-      "Fusce imperdiet metus sit amet orci mollis feugiat.",
-      "Fusce imperdiet metus sit amet orci mollis feugiat.",
+    lessons: [
+      { title: "Lesson 16", path: "/lessons/B2/Unit4/Lesson16" },
+      { title: "Lesson 17", path: "/lessons/B2/Unit4/Lesson17" },
+      { title: "Lesson 18", path: "/lessons/B2/Unit4/Lesson18" },
+      { title: "Lesson 19", path: "/lessons/B2/Unit4/Lesson19" },
+      { title: "Lesson 20", path: "/lessons/B2/Unit4/Lesson20" },
     ],
   },
   {
     icon: FaGraduationCap,
     title: "UNIT 5",
-    listItems: [
-      "Fusce imperdiet metus sit amet orci mollis feugiat.",
-      "Fusce imperdiet metus sit amet orci mollis feugiat.",
-      "Fusce imperdiet metus sit amet orci mollis feugiat.",
-      "Fusce imperdiet metus sit amet orci mollis feugiat.",
-      "Fusce imperdiet metus sit amet orci mollis feugiat.",
-      "Fusce imperdiet metus sit amet orci mollis feugiat.",
+    lessons: [
+      { title: "Lesson 21", path: "/lessons/B2/Unit5/Lesson21" },
+      { title: "Lesson 22", path: "/lessons/B2/Unit5/Lesson22" },
+      { title: "Lesson 23", path: "/lessons/B2/Unit5/Lesson23" },
+      { title: "Lesson 24", path: "/lessons/B2/Unit5/Lesson24" },
+      { title: "Lesson 25", path: "/lessons/B2/Unit5/Lesson25" },
     ],
   },
   {
     icon: GiChampions,
     title: "UNIT 6",
-    listItems: [
-      "Fusce imperdiet metus sit amet orci mollis feugiat.",
-      "Fusce imperdiet metus sit amet orci mollis feugiat.",
-      "Fusce imperdiet metus sit amet orci mollis feugiat.",
-      "Fusce imperdiet metus sit amet orci mollis feugiat.",
-      "Fusce imperdiet metus sit amet orci mollis feugiat.",
-      "Fusce imperdiet metus sit amet orci mollis feugiat.",
+    lessons: [
+      { title: "Lesson 26", path: "/lessons/B2/Unit6/Lesson26" },
+      { title: "Lesson 27", path: "/lessons/B2/Unit6/Lesson27" },
+      { title: "Lesson 28", path: "/lessons/B2/Unit6/Lesson28" },
+      { title: "Lesson 29", path: "/lessons/B2/Unit6/Lesson29" },
+      { title: "Lesson 30", path: "/lessons/B2/Unit6/Lesson30" },
     ],
   },
   // Add more units as necessary
@@ -107,8 +98,15 @@ const Curriculum = () => {
               {/* Right Inner Div for Bullet Points */}
               <div className="p-4 rounded-xl w-full text-[#FFFFFF] bg-[#155b54]">
                 <ul className="list-disc pl-5 space-y-2 text-xl md:text-2xl font-semibold font-dosis">
-                  {unit.listItems.map((item, i) => (
-                    <li key={i}>{item}</li>
+                  {unit.lessons.map((lesson, i) => (
+                    <li key={i}>
+                      <Link
+                        to={lesson.path}
+                        className="text-[#1C4F59] hover:underline"
+                      >
+                        {lesson.title}
+                      </Link>
+                    </li>
                   ))}
                 </ul>
               </div>
