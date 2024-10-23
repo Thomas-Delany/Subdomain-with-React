@@ -1,0 +1,113 @@
+{
+  "course": "A1",
+  "units": [
+    {
+      "unitNumber": 1,
+      "unitTitle": "Unit 1: Introduction",
+      "lessons": [
+        {
+          "lessonNumber": 1,
+          "title": "Lesson 1: Basics of English",
+          "content": "This is the content of Lesson 1.",
+          "videoURL": "https://example.com/video1"
+        },
+        {
+          "lessonNumber": 2,
+          "title": "Lesson 2: Simple Sentences",
+          "content": "This is the content of Lesson 2.",
+          "videoURL": "https://example.com/video2"
+        }
+      ]
+    },
+    {
+      "unitNumber": 2,
+      "unitTitle": "Unit 2: Grammar Basics",
+      "lessons": [
+        {
+          "lessonNumber": 1,
+          "title": "Lesson 1: Nouns and Pronouns",
+          "content": "This is the content of Lesson 1.",
+          "videoURL": "https://example.com/video3"
+        },
+        {
+          "lessonNumber": 2,
+          "title": "Lesson 2: Verbs and Tenses",
+          "content": "This is the content of Lesson 2.",
+          "videoURL": "https://example.com/video4"
+        }
+      ]
+    },
+    {
+      "unitNumber": 3,
+      "unitTitle": "Unit 3: Grammar Basics",
+      "lessons": [
+        {
+          "lessonNumber": 1,
+          "title": "Lesson 1: Nouns and Pronouns",
+          "content": "This is the content of Lesson 1.",
+          "videoURL": "https://example.com/video3"
+        },
+        {
+          "lessonNumber": 2,
+          "title": "Lesson 2: Verbs and Tenses",
+          "content": "This is the content of Lesson 2.",
+          "videoURL": "https://example.com/video4"
+        }
+      ]
+    },
+    {
+      "unitNumber": 4,
+      "unitTitle": "Unit 4: Grammar Basics",
+      "lessons": [
+        {
+          "lessonNumber": 1,
+          "title": "Lesson 1: Nouns and Pronouns",
+          "content": "This is the content of Lesson 1.",
+          "videoURL": "https://example.com/video3"
+        },
+        {
+          "lessonNumber": 2,
+          "title": "Lesson 2: Verbs and Tenses",
+          "content": "This is the content of Lesson 2.",
+          "videoURL": "https://example.com/video4"
+        }
+      ]
+    },
+    {
+      "unitNumber": 5,
+      "unitTitle": "Unit 5: Grammar Basics",
+      "lessons": [
+        {
+          "lessonNumber": 1,
+          "title": "Lesson 1: Nouns and Pronouns",
+          "content": "This is the content of Lesson 1.",
+          "videoURL": "https://example.com/video3"
+        },
+        {
+          "lessonNumber": 2,
+          "title": "Lesson 2: Verbs and Tenses",
+          "content": "This is the content of Lesson 2.",
+          "videoURL": "https://example.com/video4"
+        }
+      ]
+    },
+    {
+      "unitNumber": 6,
+      "unitTitle": "Unit 6: Grammar Basics",
+      "lessons": [
+        {
+          "lessonNumber": 1,
+          "title": "Lesson 1: Nouns and Pronouns",
+          "content": "This is the content of Lesson 1.",
+          "videoURL": "https://example.com/video3"
+        },
+        {
+          "lessonNumber": 2,
+          "title": "Lesson 2: Verbs and Tenses",
+          "content": "This is the content of Lesson 2.",
+          "videoURL": "https://example.com/video4"
+        }
+      ]
+    }
+  ]
+}
