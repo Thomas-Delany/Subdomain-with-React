@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+const baseUrl = import.meta.env.VITE_BASE_URL;
 
 function FreeCourse() {
   return (
@@ -13,7 +14,7 @@ function FreeCourse() {
         <div className="flex justify-center items-center">
           <a className="group bg-white rounded-lg">
             <div className="w-full overflow-hidden rounded-t-lg">
-              <Link to="#">
+              <Link to={`${baseUrl}courses/FreeCourse/Free`}>
                 <img
                   src="src/assets/free-english-course.png"
                   className="h-full w-full object-cover object-center"

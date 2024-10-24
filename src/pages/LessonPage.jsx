@@ -50,6 +50,7 @@ const LessonPage = () => {
       title={lessonData.title}
       content={lessonData.content}
       exercises={lessonData.exercises}
+      videoUrl={lessonData.videoUrl}
     />
   );
 };

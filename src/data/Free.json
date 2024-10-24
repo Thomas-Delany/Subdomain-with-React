@@ -1,0 +1,113 @@
+{
+  "units": [
+    {
+      "unit": "Unit1",
+      "lessons": [
+        {
+          "id": "Lesson1",
+          "title": "Lesson 1 Title",
+          "videoUrl": "https://youtu.be/2sL3YuEXmqI?si=sgHezFYxykv_Pr-b",
+          "content": "This is the content for Lesson 1 in Unit 1 of A1.",
+          "exercises": ["Exercise 1", "Exercise 2"]
+        },
+        {
+          "id": "Lesson2",
+          "title": "Lesson 2 Title",
+          "videoUrl": "https://www.youtube.com/embed/your-video-id",
+          "content": "This is the content for Lesson 2 in Unit 1 of A1.",
+          "exercises": ["Exercise 1", "Exercise 2"]
+        },
+        {
+          "id": "Lesson3",
+          "title": "Lesson 3 Title",
+          "videoUrl": "https://www.youtube.com/embed/your-video-id",
+          "content": "This is the content for Lesson 2 in Unit 1 of A1.",
+          "exercises": ["Exercise 1", "Exercise 2"]
+        },
+        {
+          "id": "Lesson4",
+          "title": "Lesson 4 Title",
+          "videoUrl": "https://www.youtube.com/embed/your-video-id",
+          "content": "This is the content for Lesson 2 in Unit 1 of A1.",
+          "exercises": ["Exercise 1", "Exercise 2"]
+        },
+        {
+          "id": "Lesson5",
+          "title": "Lesson 5 Title",
+          "videoUrl": "https://www.youtube.com/embed/your-video-id",
+          "content": "This is the content for Lesson 2 in Unit 1 of A1.",
+          "exercises": ["Exercise 1", "Exercise 2"]
+        }
+      ]
+    },
+    {
+      "unit": "Unit2",
+      "lessons": [
+        {
+          "id": "Lesson6",
+          "title": "Lesson 6 Title",
+          "videoUrl": "https://www.youtube.com/embed/your-video-id",
+          "content": "This is the content for Lesson 1 in Unit 2 of A1.",
+          "exercises": ["Exercise 1", "Exercise 2"]
+        },
+        {
+          "id": "Lesson7",
+          "title": "Lesson 7 Title",
+          "videoUrl": "https://www.youtube.com/embed/your-video-id",
+          "content": "This is the content for Lesson 2 in Unit 1 of A1.",
+          "exercises": ["Exercise 1", "Exercise 2"]
+        },
+        {
+          "id": "Lesson8",
+          "title": "Lesson 8 Title",
+          "videoUrl": "https://www.youtube.com/embed/your-video-id",
+          "content": "This is the content for Lesson 2 in Unit 1 of A1.",
+          "exercises": ["Exercise 1", "Exercise 2"]
+        },
+        {
+          "id": "Lesson9",
+          "title": "Lesson 9 Title",
+          "videoUrl": "https://www.youtube.com/embed/your-video-id",
+          "content": "This is the content for Lesson 2 in Unit 1 of A1.",
+          "exercises": ["Exercise 1", "Exercise 2"]
+        },
+        {
+          "id": "Lesson10",
+          "title": "Lesson 10 Title",
+          "videoUrl": "https://www.youtube.com/embed/your-video-id",
+          "content": "This is the content for Lesson 2 in Unit 1 of A1.",
+          "exercises": ["Exercise 1", "Exercise 2"]
+        }
+      ]
+    },
+    {
+      "unit": "Unit3",
+      "lessons": [
+        {
+          "id": "Lesson11",
+          "title": "Lesson 11 Title",
+          "content": "This is the content for Lesson 1 in Unit 2 of A1.",
+          "exercises": ["Exercise 1", "Exercise 2"]
+        },
+        {
+          "id": "Lesson12",
+          "title": "Lesson 12 Title",
+          "content": "This is the content for Lesson 2 in Unit 1 of A1.",
+          "exercises": ["Exercise 1", "Exercise 2"]
+        },
+        {
+          "id": "Lesson13",
+          "title": "Lesson 13 Title",
+          "content": "This is the content for Lesson 2 in Unit 1 of A1.",
+          "exercises": ["Exercise 1", "Exercise 2"]
+        },
+        {
+          "id": "Lesson14",
+          "title": "Lesson 14 Title",
+          "content": "This is the content for Lesson 2 in Unit 1 of A1.",
+          "exercises": ["Exercise 1", "Exercise 2"]
+        }
+      ]
+    }
+  ]
+}

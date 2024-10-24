@@ -18,6 +18,7 @@ import C2CambridgeProficiency from "./pages/courses/C2CambridgeProficiency";
 import GramaticaEsencial from "./pages/courses/GramaticaEsencial";
 import VerbosEnIngles from "./pages/courses/VerbosEnIngles";
 import PronunciacionEnIngles from "./pages/courses/PronunciacionEnIngles";
+import Free from "./pages/courses/FreeCourse/Free";
 import LessonPage from "./pages/LessonPage"; // Import LessonPage component
 
 function App() {
@@ -67,6 +68,7 @@ function App() {
           path="/courses/PronunciacionEnIngles"
           element={<PronunciacionEnIngles />}
         />
+        <Route path="/courses/FreeCourse/Free" element={<Free />} />
 
         {/* Route for individual lesson pages */}
         <Route
