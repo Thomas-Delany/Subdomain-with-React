@@ -48,9 +48,9 @@ const LessonPage = () => {
   return (
     <LessonTemplate
       title={lessonData.title}
+      videoUrl={lessonData.videoUrl}
       content={lessonData.content}
       exercises={lessonData.exercises}
-      videoUrl={lessonData.videoUrl}
     />
   );
 };

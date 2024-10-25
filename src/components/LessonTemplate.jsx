@@ -1,14 +1,17 @@
 const LessonTemplate = ({ title, videoUrl, content, exercises }) => {
   return (
-    <div className="lesson">
-      <h1>{title}</h1>
+    <div className="lesson bg-[#00C699] text-white">
+      <h1 className="py-3 font-dosis text-5xl text-center font-bold text-white leading-tight">
+        {title}
+      </h1>
 
       {/* Video embed */}
       {videoUrl && (
-        <div className="video-container my-4">
+        <div className="video-container my-4 flex justify-center items-center">
           <iframe
             width="560"
             height="315"
+            src={videoUrl}
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
