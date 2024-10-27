@@ -91,7 +91,7 @@ const products = [
 
 const CoursesDisplay = () => {
   return (
-    <div className="bg-[#333652] flex items-center justify-center">
+    <div className="bg-[#e2edf1] flex items-center justify-center">
       <div className="mx-auto max-w-2xl px-16 py-6 sm:px-6 sm:py-24 md:pt-4 lg:max-w-7xl lg:px-8">
         <h2 className="text-5xl text-center font-bold text-[#E9EAEC] leading-tight font-dosis pb-8 pt-8">
           Ensure you keep progressing

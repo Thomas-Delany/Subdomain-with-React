@@ -2,7 +2,6 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
 import Products from "./components/Products";
 import FreeCourse from "./components/FreeCourse";
 import Footer from "./components/Footer";
@@ -33,7 +32,6 @@ function App() {
           path="/"
           element={
             <>
-              <Hero />
               <Products />
               <FreeCourse />
             </>

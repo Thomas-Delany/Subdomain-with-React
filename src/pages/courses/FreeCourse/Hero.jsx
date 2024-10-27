@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="max-w-screen-xl px-8 md:px-28 py-8 mx-auto lg:gap-8 xl:gap-0 grid lg:grid-cols-12 lg:py-10 flex justify-between items-center">
         <div className="mr-auto lg:col-span-7 mx-auto p-6">
           <h1 className="max-w-2xl mb-5 tracking-normal text-4xl md:text-5xl text-[#E9EAEC] font-bryndan font-bold pb-4 text-center md:text-left">
-            Free Course!
+            Free English Course!
           </h1>
           <p className="max-w-2xl mb-4 font-black lg:mb-4 text-2xl md:text-3xl text-[#E9EAEC] text-left font-dosis">
             What you will learn
