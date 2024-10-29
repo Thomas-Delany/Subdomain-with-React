@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 const PreviousLessonButton = ({ prevLessonPath }) => {
   const navigate = useNavigate();
 
-  const handlePrevClick  = () => {
+  const handlePrevClick = () => {
     if (prevLessonPath) {
       navigate(prevLessonPath);
     }
