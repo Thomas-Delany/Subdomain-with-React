@@ -10,20 +10,16 @@ const LessonTemplate = ({
   nextLessonPath,
 }) => {
   return (
-    <div className="lesson bg-[#00C699] text-white">
-      <h1 className="py-3 font-dosis text-5xl text-center font-bold text-white leading-tight">
+    <div className="lesson bg-[#00C699]">
+      <h1 className="py-10 font-dosis text-4xl text-center font-bold text-white leading-tight">
         {title}
       </h1>
 
-      <div className="video-container m-4 flex justify-center items-center">
-        {/* Previous Lesson Button */}
-        <div className="p-5">
-          <PreviousLessonButton prevLessonPath={prevLessonPath} />
-        </div>
-
+      <div className="video-container m-4 flex flex-col items-center">
         {/* Video Embed */}
         {videoUrl && (
           <iframe
+            className="my-4"
             width="560"
             height="315"
             src={videoUrl}
@@ -35,8 +31,9 @@ const LessonTemplate = ({
           ></iframe>
         )}
 
-        {/* Next Lesson Button */}
-        <div className="p-5">
+        {/* Button Container */}
+        <div class="flex flex-row items-center justify-center py-4 space-x-4 font-dosis font-bold">
+          <PreviousLessonButton prevLessonPath={prevLessonPath} />
           <NextLessonButton nextLessonPath={nextLessonPath} />
         </div>
       </div>

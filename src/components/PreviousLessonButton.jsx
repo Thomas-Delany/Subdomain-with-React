@@ -13,7 +13,7 @@ const PreviousLessonButton = ({ prevLessonPath }) => {
     <button
       onClick={handlePrevClick}
       disabled={!prevLessonPath}
-      className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded"
+      className="bg-white text-green-500 py-3 px-4 rounded-lg text-lg w-48 h-12 flex items-center justify-center"
     >
       Previous Lesson
     </button>
