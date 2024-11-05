@@ -47,7 +47,7 @@ const products = [
   },
   {
     id: 7,
-    href: "/courses/B2CambridgeFirst",
+    href: `${baseUrl}courses/B2-Cambridge-First/B2First`,
     description: "Pass the B2 Cambrdige Exam!",
     imageSrc: "src/assets/b2_first.png",
     imageAlt: "B2 Cambrdige",
