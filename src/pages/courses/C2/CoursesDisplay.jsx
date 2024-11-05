@@ -55,11 +55,19 @@ const CoursesDisplay = () => {
         <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-8 py-4">
           {products.slice(0).map((product, index) => (
             <React.Fragment key={product.id}>
-              {/* Insert an H2 header before course 7 */}
+              {/* Cambridge Courses */}
               {index === 0 && (
                 <div className="col-span-full flex justify-center items-center">
                   <h2 className="text-5xl text-center font-bold text-[#1b3679] leading-tight font-dosis pb-8 pt-8">
-                    Specialized Courses
+                    Cambridge Courses
+                  </h2>
+                </div>
+              )}
+              {/* Specialized Courses */}
+              {index === 3 && (
+                <div className="col-span-full flex justify-center items-center">
+                  <h2 className="text-5xl text-center font-bold text-[#1b3679] leading-tight font-dosis pb-8 pt-8">
+                  Specialized Courses
                   </h2>
                 </div>
               )}

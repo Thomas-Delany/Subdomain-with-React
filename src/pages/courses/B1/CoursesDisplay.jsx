@@ -71,8 +71,16 @@ const CoursesDisplay = () => {
         <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 xl:gap-x-8 py-4">
           {products.map((product, index) => (
             <>
-              {/* Insert an H3 header before course 7 */}
+              {/* Cambridge Courses */}
               {index === 2 && (
+                <div className="col-span-full flex justify-center items-center">
+                  <h2 className="text-5xl text-center font-bold text-[#1b3679] leading-tight font-dosis pb-8 pt-8">
+                    Cambridge Courses
+                  </h2>
+                </div>
+              )}
+              {/* Specialized Courses */}
+              {index === 5 && (
                 <div className="col-span-full flex justify-center items-center">
                   <h2 className="text-5xl text-center font-bold text-[#1b3679] leading-tight font-dosis pb-8 pt-8">
                     Specialized Courses
