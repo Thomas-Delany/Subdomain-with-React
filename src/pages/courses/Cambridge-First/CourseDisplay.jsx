@@ -47,41 +47,34 @@ const products = [
   },
   {
     id: 7,
-    href: `${baseUrl}courses/Cambridge-First/B2`,
-    description: "Pass the B2 Cambrdige Exam!",
-    imageSrc: "../../src/assets/b2_first.png",
-    imageAlt: "B2 Cambrdige",
-  },
-  {
-    id: 8,
     href: `${baseUrl}courses/Cambridge-Advanced/C1`,
     description: "Pass the C1 Cambrdige Exam!",
     imageSrc: "../../src/assets/c1_advanced.png",
     imageAlt: "C1 Cambrdige",
   },
   {
-    id: 9,
+    id: 8,
     href: `${baseUrl}courses/Cambridge-Proficiency/C2`,
     description: "Pass the C2 Cambrdige Exam",
     imageSrc: "../../src/assets/c2_pro.png",
     imageAlt: "C2 Cambrdige",
   },
   {
-    id: 10,
+    id: 9,
     href: `${baseUrl}courses/English-Pronunciation/Pronunciation`,
     description: "Learn all about English Pronunciation",
     imageSrc: "../../src/assets/pronunciacion-en-ingles.png",
     imageAlt: "English Pronunciation",
   },
   {
-    id: 11,
+    id: 10,
     href: `${baseUrl}courses/English-Grammar/Grammar`,
     description: "Learn the Essentials of English Grammar",
     imageSrc: "../../src/assets/Gramatica-esencial.png",
     imageAlt: "English Grammar",
   },
   {
-    id: 12,
+    id: 11,
     href: `${baseUrl}courses/Verbs-In-English/Verbs`,
     description: "Auxiliaries, Modals, Copulas, Active & Passive Voice, Get...",
     imageSrc: "../../src/assets/verbos-en-ingles.png",
@@ -108,7 +101,7 @@ const CoursesDisplay = () => {
                 </div>
               )}
               {/* Specialized Courses */}
-              {index === 9 && (
+              {index === 8 && (
                 <div className="col-span-full flex justify-center items-center">
                   <h2 className="text-5xl text-center font-bold text-[#1b3679] leading-tight font-dosis pb-8 pt-8">
                     Specialized Courses
