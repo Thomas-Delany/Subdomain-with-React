@@ -7,9 +7,9 @@ const NextLevel = () => {
     <section className="bg-[#F6E4CC]">
       <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:grid-cols-12 lg:py-16 flex justify-between items-center">
         <div className="lg:col-span-6 lg:flex justify-center items-center mx-auto">
-          <Link to={`${baseUrl}courses/A2/WayStage`}>
+          <Link to={`${baseUrl}courses/Cambridge-Proficiency/C2`}>
             <img
-              src="../../src/assets/A2-new.png"
+              src="../../src/assets/c2_pro.png"
               className="mx-auto rounded-3xl"
               alt="A2"
             ></img>
@@ -24,7 +24,7 @@ const NextLevel = () => {
             XXXXXX — xxxxxxx.
           </p>
           <div className="space-x-2 text-center lg:text-left pt-5 md:pt-1">
-            <Link to={`${baseUrl}courses/A2/WayStage`}>
+            <Link to={`${baseUrl}courses/Cambridge-Proficiency/C2`}>
               <button
                 type="button"
                 className="w-32 h-12 focus:outline-none font-dosis rounded-lg text-xl px-5 py-2.5 me-2 mb-2 text-[#1C4F59] bg-[#fab51a] font-bold"
