@@ -89,30 +89,54 @@ const CoursesDisplay = () => {
         <h2 className="text-5xl text-center font-bold text-[#1b3679] leading-tight font-dosis pb-8 pt-8">
           Ensure you keep progressing
         </h2>
+
+        {/* First section: Render the product with index 0 in its own centered grid */}
         <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-8 py-4">
-          {products.map((product, index) => (
-            <>
+          {products.slice(0, 5).map((product) => (
+            <Link
+              key={product.id}
+              to={product.href}
+              className="group bg-white rounded-lg w-full sm:max-w-sm"
+            >
+              <div className="w-full overflow-hidden rounded-t-lg">
+                <img
+                  alt={product.imageAlt}
+                  src={product.imageSrc}
+                  className="h-full w-full object-cover object-center"
+                />
+              </div>
+              <div className="mt-0 w-full rounded-lg">
+                <div className="w-8/12 mx-auto">
+                  <p className="py-8 text-lg font-semibold text-[#1b3679] font-dosis text-center text-xl">
+                    {product.description}
+                  </p>
+                </div>
+              </div>
+            </Link>
+          ))}
+        </div>
+
+        {/* Second section: Render the rest of the products from index 1 onwards */}
+        <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-8 py-4">
+          {products.slice(1).map((product, index) => (
+            <React.Fragment key={product.id}>
               {/* Cambridge Courses */}
-              {index === 6 && (
+              {index === 5 && (
                 <div className="col-span-full flex justify-center items-center">
                   <h2 className="text-5xl text-center font-bold text-[#1b3679] leading-tight font-dosis pb-8 pt-8">
-                    Cambridge Courses
+                  Cambridge Courses
                   </h2>
                 </div>
               )}
               {/* Specialized Courses */}
-              {index === 9 && (
+              {index === 8 && (
                 <div className="col-span-full flex justify-center items-center">
                   <h2 className="text-5xl text-center font-bold text-[#1b3679] leading-tight font-dosis pb-8 pt-8">
-                    Specialized Courses
+                  Specialized Courses
                   </h2>
                 </div>
               )}
-              <Link
-                key={product.id}
-                to={product.href} // Change href to to for react-router
-                className="group bg-white rounded-lg"
-              >
+              <Link to={product.href} className="group bg-white rounded-lg">
                 <div className="w-full overflow-hidden rounded-t-lg">
                   <img
                     alt={product.imageAlt}
@@ -128,7 +152,7 @@ const CoursesDisplay = () => {
                   </div>
                 </div>
               </Link>
-            </>
+            </React.Fragment>
           ))}
         </div>
       </div>
@@ -137,3 +161,4 @@ const CoursesDisplay = () => {
 };
 
 export default CoursesDisplay;
+
