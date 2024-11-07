@@ -1,6 +1,6 @@
 English Reservoir is composed of two primary infrastructures,
 
-1. The main country level domains. Depending on your country, it could be .es, .com, .fr for Spain, world and France respectively. These websites serve as the entry point to English Reservoir, as well as to provide an English Reservoir of free resources, content and more. The repository for our template site and more info on this can be found here: https://github.com/Thomas-Delany/English_Reservoir
+1. The main country level domains. Depending on your country, it could be .es, .com, .fr for Spain, world and France respectively. These websites serve as the entry point to English Reservoir for the respective language areas, as well as to provide an English Reservoir of free resources, content and more. The repository for our template site and more info on this can be found here: https://github.com/Thomas-Delany/English_Reservoir
 
 2. The courses (in this repository). All our course infrastructure is to be built on a separate subdomain where students and affiliates can access the learning platform.
 

@@ -90,13 +90,13 @@ const CoursesDisplay = () => {
           Ensure you keep progressing
         </h2>
 
-        {/* First section: Render the product with index 0 in its own centered grid */}
+        {/* First section */}
         <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-8 py-4">
-          {products.slice(0, 5).map((product) => (
+          {products.slice(0, 6).map((product) => (
             <Link
               key={product.id}
               to={product.href}
-              className="group bg-white rounded-lg w-full sm:max-w-sm"
+              className="group bg-white rounded-lg"
             >
               <div className="w-full overflow-hidden rounded-t-lg">
                 <img
@@ -116,43 +116,65 @@ const CoursesDisplay = () => {
           ))}
         </div>
 
-        {/* Second section: Render the rest of the products from index 1 onwards */}
+        {/* Cambridge Courses Section */}
         <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-8 py-4">
-          {products.slice(1).map((product, index) => (
-            <React.Fragment key={product.id}>
-              {/* Cambridge Courses */}
-              {index === 5 && (
-                <div className="col-span-full flex justify-center items-center">
-                  <h2 className="text-5xl text-center font-bold text-[#1b3679] leading-tight font-dosis pb-8 pt-8">
-                  Cambridge Courses
-                  </h2>
+          <div className="col-span-full flex justify-center items-center">
+            <h2 className="text-5xl text-center font-bold text-[#1b3679] leading-tight font-dosis pb-8 pt-8">
+              Cambridge Courses
+            </h2>
+          </div>
+          {products.slice(6, 9).map((product) => (
+            <Link
+              key={product.id}
+              to={product.href}
+              className="group bg-white rounded-lg"
+            >
+              <div className="w-full overflow-hidden rounded-t-lg">
+                <img
+                  alt={product.imageAlt}
+                  src={product.imageSrc}
+                  className="h-full w-full object-cover object-center"
+                />
+              </div>
+              <div className="mt-0 w-full rounded-lg">
+                <div className="w-8/12 mx-auto">
+                  <p className="py-8 text-lg font-semibold text-[#1b3679] font-dosis text-center text-xl">
+                    {product.description}
+                  </p>
                 </div>
-              )}
-              {/* Specialized Courses */}
-              {index === 8 && (
-                <div className="col-span-full flex justify-center items-center">
-                  <h2 className="text-5xl text-center font-bold text-[#1b3679] leading-tight font-dosis pb-8 pt-8">
-                  Specialized Courses
-                  </h2>
+              </div>
+            </Link>
+          ))}
+        </div>
+
+        {/* Specialized Courses Section */}
+        <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 place-items-center py-4">
+          <div className="col-span-full flex justify-center items-center">
+            <h2 className="text-5xl text-center font-bold text-[#1b3679] leading-tight font-dosis pb-8 pt-8">
+              Specialized Courses
+            </h2>
+          </div>
+          {products.slice(9).map((product) => (
+            <Link
+              key={product.id}
+              to={product.href}
+              className="group bg-white rounded-lg"
+            >
+              <div className="w-full overflow-hidden rounded-t-lg">
+                <img
+                  alt={product.imageAlt}
+                  src={product.imageSrc}
+                  className="h-full w-full object-cover object-center"
+                />
+              </div>
+              <div className="mt-0 w-full rounded-lg">
+                <div className="w-8/12 mx-auto">
+                  <p className="py-8 text-lg font-semibold text-[#1b3679] font-dosis text-center text-xl">
+                    {product.description}
+                  </p>
                 </div>
-              )}
-              <Link to={product.href} className="group bg-white rounded-lg">
-                <div className="w-full overflow-hidden rounded-t-lg">
-                  <img
-                    alt={product.imageAlt}
-                    src={product.imageSrc}
-                    className="h-full w-full object-cover object-center"
-                  />
-                </div>
-                <div className="mt-0 w-full rounded-lg">
-                  <div className="w-8/12 mx-auto">
-                    <p className="py-8 text-lg font-semibold text-[#1b3679] font-dosis text-center text-xl">
-                      {product.description}
-                    </p>
-                  </div>
-                </div>
-              </Link>
-            </React.Fragment>
+              </div>
+            </Link>
           ))}
         </div>
       </div>
@@ -161,4 +183,3 @@ const CoursesDisplay = () => {
 };
 
 export default CoursesDisplay;
-

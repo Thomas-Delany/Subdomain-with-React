@@ -92,7 +92,7 @@ const Curriculum = () => {
             <div className="flex items-center justify-center w-10/12 rounded-3xl p-8 bg-[#fcd404]">
               {/* Left Inner Div for Icon */}
               <div className="hidden md:flex justify-center items-center bg-white rounded-full p-4 mr-6">
-                <unit.icon className="text-[#1C4F59] text-6xl md:text-5xl lg:text-6xl" />
+                <unit.icon className="text-[#57b252] text-6xl md:text-5xl lg:text-6xl" />
               </div>
 
               {/* Right Inner Div for Bullet Points */}
