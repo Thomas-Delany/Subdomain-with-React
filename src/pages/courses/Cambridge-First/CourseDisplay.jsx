@@ -80,7 +80,7 @@ const CoursesDisplay = () => {
     <div className="bg-[#e2edf1] flex items-center justify-center">
       <div className="mx-auto max-w-2xl px-16 py-6 sm:px-6 sm:py-24 md:pt-4 lg:max-w-7xl lg:px-8">
         <h2 className="text-5xl text-center font-bold text-[#1b3679] leading-tight font-dosis pb-8 pt-8">
-          Ensure you keep progressing
+          C2 Cambridge Proficiency
         </h2>
 
         {/* First section: Render the product with index 0 in its own centered grid */}
@@ -113,11 +113,11 @@ const CoursesDisplay = () => {
         <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-8 py-4">
           {products.slice(1).map((product, index) => (
             <React.Fragment key={product.id}>
-              {/* Start Learning */}
+              {/* Ensure you keep progressing */}
               {index === 0 && (
                 <div className="col-span-full flex justify-center items-center">
                   <h2 className="text-5xl text-center font-bold text-[#1b3679] leading-tight font-dosis pb-8 pt-8">
-                    Start Learning
+                  Ensure you keep progressing
                   </h2>
                 </div>
               )}

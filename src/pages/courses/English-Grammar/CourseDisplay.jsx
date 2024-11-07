@@ -75,13 +75,6 @@ const products = [
   },
   {
     id: 11,
-    href: `${baseUrl}courses/English-Grammar/Grammar`,
-    description: "Learn the Essentials of English Grammar",
-    imageSrc: "../../src/assets/Gramatica-esencial.png",
-    imageAlt: "English Grammar",
-  },
-  {
-    id: 12,
     href: `${baseUrl}courses/Verbs-In-English/Verbs`,
     description: "Auxiliaries, Modals, Copulas, Active & Passive Voice, Get...",
     imageSrc: "../../src/assets/verbos-en-ingles.png",

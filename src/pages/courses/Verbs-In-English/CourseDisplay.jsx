@@ -80,13 +80,6 @@ const products = [
     imageSrc: "../../src/assets/Gramatica-esencial.png",
     imageAlt: "English Grammar",
   },
-  {
-    id: 12,
-    href: `${baseUrl}courses/Verbs-In-English/Verbs`,
-    description: "Auxiliaries, Modals, Copulas, Active & Passive Voice, Get...",
-    imageSrc: "../../src/assets/verbos-en-ingles.png",
-    imageAlt: "English verbs",
-  },
 ];
 
 const CoursesDisplay = () => {

@@ -4,7 +4,7 @@ const baseUrl = import.meta.env.VITE_BASE_URL;
 
 const NextLevel = () => {
   return (
-    <section className="bg-[#F6E4CC]">
+    <section className="bg-[#57b252]">
       <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:grid-cols-12 lg:py-16 flex justify-between items-center">
         <div className="lg:col-span-6 lg:flex justify-center items-center mx-auto">
           <Link to={`${baseUrl}courses/Cambridge-Advanced/C1`}>
@@ -17,17 +17,17 @@ const NextLevel = () => {
         </div>
 
         <div className="mr-auto lg:col-span-6 mx-auto p-6 sm:flex sm:flex-col">
-          <h1 className="max-w-2xl mb-5 text-5xl tracking-normal md:text-5xl xl:text-5xl text-[#1C4F59] font-black font-dosis text-center lg:text-left">
+          <h1 className="max-w-2xl mb-5 text-5xl tracking-normal md:text-5xl xl:text-5xl text-[#FFFFFF] font-black font-dosis text-center lg:text-left">
             Time to level up!
           </h1>
-          <p className="hidden md:block max-w-2xl mb-4 font-bold font-dosis text-[#1C4F59] lg:mb-8 md:text-lg lg:text-xl text-left">
+          <p className="hidden md:block max-w-2xl mb-4 font-bold font-dosis text-[#FFFFFF] lg:mb-8 md:text-lg lg:text-xl text-left">
             XXXXXX — xxxxxxx.
           </p>
           <div className="space-x-2 text-center lg:text-left pt-5 md:pt-1">
             <Link to={`${baseUrl}courses/Cambridge-Advanced/C1`}>
               <button
                 type="button"
-                className="w-32 h-12 focus:outline-none font-dosis rounded-lg text-xl px-5 py-2.5 me-2 mb-2 text-[#1C4F59] bg-[#fab51a] font-bold"
+                className="w-32 h-12 focus:outline-none font-dosis rounded-lg text-xl px-5 py-2.5 me-2 mb-2 text-[#1C4F59] bg-[#fcd404] font-bold"
               >
                 Begin!
               </button>
