@@ -89,46 +89,92 @@ const CoursesDisplay = () => {
         <h2 className="text-5xl text-center font-bold text-[#1b3679] leading-tight font-dosis pb-8 pt-8">
           Ensure you keep progressing
         </h2>
+
+        {/* First section */}
         <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-8 py-4">
-          {products.map((product, index) => (
-            <>
-              {/* Cambridge Courses */}
-              {index === 6 && (
-                <div className="col-span-full flex justify-center items-center">
-                  <h2 className="text-5xl text-center font-bold text-[#1b3679] leading-tight font-dosis pb-8 pt-8">
-                    Cambridge Courses
-                  </h2>
+          {products.slice(0, 6).map((product) => (
+            <Link
+              key={product.id}
+              to={product.href}
+              className="group bg-white rounded-lg"
+            >
+              <div className="w-full overflow-hidden rounded-t-lg">
+                <img
+                  alt={product.imageAlt}
+                  src={product.imageSrc}
+                  className="h-full w-full object-cover object-center"
+                />
+              </div>
+              <div className="mt-0 w-full rounded-lg">
+                <div className="w-8/12 mx-auto">
+                  <p className="py-8 text-lg font-semibold text-[#1b3679] font-dosis text-center text-xl">
+                    {product.description}
+                  </p>
                 </div>
-              )}
-              {/* Specialized Courses */}
-              {index === 9 && (
-                <div className="col-span-full flex justify-center items-center">
-                  <h2 className="text-5xl text-center font-bold text-[#1b3679] leading-tight font-dosis pb-8 pt-8">
-                    Specialized Courses
-                  </h2>
+              </div>
+            </Link>
+          ))}
+        </div>
+
+        {/* Cambridge Courses Section */}
+        <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-8 py-4">
+          <div className="col-span-full flex justify-center items-center">
+            <h2 className="text-5xl text-center font-bold text-[#1b3679] leading-tight font-dosis pb-8 pt-8">
+              Cambridge Courses
+            </h2>
+          </div>
+          {products.slice(6, 9).map((product) => (
+            <Link
+              key={product.id}
+              to={product.href}
+              className="group bg-white rounded-lg"
+            >
+              <div className="w-full overflow-hidden rounded-t-lg">
+                <img
+                  alt={product.imageAlt}
+                  src={product.imageSrc}
+                  className="h-full w-full object-cover object-center"
+                />
+              </div>
+              <div className="mt-0 w-full rounded-lg">
+                <div className="w-8/12 mx-auto">
+                  <p className="py-8 text-lg font-semibold text-[#1b3679] font-dosis text-center text-xl">
+                    {product.description}
+                  </p>
                 </div>
-              )}
-              <Link
-                key={product.id}
-                to={product.href} // Change href to to for react-router
-                className="group bg-white rounded-lg"
-              >
-                <div className="w-full overflow-hidden rounded-t-lg">
-                  <img
-                    alt={product.imageAlt}
-                    src={product.imageSrc}
-                    className="h-full w-full object-cover object-center"
-                  />
+              </div>
+            </Link>
+          ))}
+        </div>
+
+        {/* Specialized Courses Section */}
+        <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 place-items-center py-4">
+          <div className="col-span-full flex justify-center items-center">
+            <h2 className="text-5xl text-center font-bold text-[#1b3679] leading-tight font-dosis pb-8 pt-8">
+              Specialized Courses
+            </h2>
+          </div>
+          {products.slice(9).map((product) => (
+            <Link
+              key={product.id}
+              to={product.href}
+              className="group bg-white rounded-lg"
+            >
+              <div className="w-full overflow-hidden rounded-t-lg">
+                <img
+                  alt={product.imageAlt}
+                  src={product.imageSrc}
+                  className="h-full w-full object-cover object-center"
+                />
+              </div>
+              <div className="mt-0 w-full rounded-lg">
+                <div className="w-8/12 mx-auto">
+                  <p className="py-8 text-lg font-semibold text-[#1b3679] font-dosis text-center text-xl">
+                    {product.description}
+                  </p>
                 </div>
-                <div className="mt-0 w-full rounded-lg">
-                  <div className="w-8/12 mx-auto">
-                    <p className="py-8 text-lg font-semibold text-[#1b3679] font-dosis text-center text-xl">
-                      {product.description}
-                    </p>
-                  </div>
-                </div>
-              </Link>
-            </>
+              </div>
+            </Link>
           ))}
         </div>
       </div>
