@@ -62,7 +62,7 @@ const products = [
   {
     id: 9,
     href: `${baseUrl}courses/Verbs-In-English/Verbs`,
-    description: "Auxiliaries, Modals, Copulas, Active & Passive Voice, Get...",
+    description: "Everything to do with English Verbs",
     imageSrc: "../../src/assets/verbos-en-ingles.png",
     imageAlt: "English verbs",
   },

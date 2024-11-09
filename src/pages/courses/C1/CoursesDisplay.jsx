@@ -48,7 +48,7 @@ const products = [
   {
     id: 7,
     href: `${baseUrl}courses/Verbs-In-English/Verbs`,
-    description: "Auxiliaries, Modals, Copulas, Active & Passive Voice, Get...",
+    description: "Everything to do with English Verbs",
     imageSrc: "../../src/assets/verbos-en-ingles.png",
     imageAlt: "English verbs",
   },
@@ -74,7 +74,7 @@ const CoursesDisplay = () => {
               {index === 3 && (
                 <div className="col-span-full flex justify-center items-center">
                   <h2 className="text-5xl text-center font-bold text-[#1b3679] leading-tight font-dosis pb-8 pt-8">
-                  Specialized Courses
+                    Specialized Courses
                   </h2>
                 </div>
               )}

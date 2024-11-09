@@ -6,16 +6,16 @@ const products = [
   {
     id: 1,
     href: `${baseUrl}courses/A1/BreakThrough`,
-    description: "A1 —  Breakthrough",
+    description: "A1 —  BreakThrough",
     imageSrc: "../../src/assets/A1-new.png",
     imageAlt: "A1 Breakthrough",
   },
   {
     id: 2,
     href: `${baseUrl}courses/A2/WayStage`,
-    description: "A2 —  Waystage",
+    description: "A1 —  WayStage",
     imageSrc: "../../src/assets/A2-new.png",
-    imageAlt: "A2 Waystage",
+    imageAlt: "A2 WayStage",
   },
   {
     id: 3,
@@ -47,43 +47,43 @@ const products = [
   },
   {
     id: 7,
-    href: "/courses/B2CambridgeFirst",
+    href: `${baseUrl}courses/Cambridge-First/B2`,
     description: "Pass the B2 Cambrdige Exam!",
     imageSrc: "../../src/assets/b2_first.png",
     imageAlt: "B2 Cambrdige",
   },
   {
     id: 8,
-    href: "/courses/C1CambridgeAdvanced",
+    href: `${baseUrl}courses/Cambridge-Advanced/C1`,
     description: "Pass the C1 Cambrdige Exam!",
     imageSrc: "../../src/assets/c1_advanced.png",
     imageAlt: "C1 Cambrdige",
   },
   {
     id: 9,
-    href: "/courses/C2CambridgeProficiency",
+    href: `${baseUrl}courses/Cambridge-Proficiency/C2`,
     description: "Pass the C2 Cambrdige Exam",
     imageSrc: "../../src/assets/c2_pro.png",
     imageAlt: "C2 Cambrdige",
   },
   {
     id: 10,
-    href: "/courses/PronunciacionEnIngles",
+    href: `${baseUrl}courses/English-Pronunciation/Pronunciation`,
     description: "Learn all about English Pronunciation",
     imageSrc: "../../src/assets/pronunciacion-en-ingles.png",
     imageAlt: "English Pronunciation",
   },
   {
     id: 11,
-    href: "/courses/GramaticaEsencial",
+    href: `${baseUrl}courses/English-Grammar/Grammar`,
     description: "Learn the Essentials of English Grammar",
     imageSrc: "../../src/assets/Gramatica-esencial.png",
     imageAlt: "English Grammar",
   },
   {
     id: 12,
-    href: "/courses/VerbosEnIngles",
-    description: "Auxiliaries, Modals, Copulas, Active & Passive Voice, Get...",
+    href: `${baseUrl}courses/Verbs-In-English/Verbs`,
+    description: "Everything to do with English Verbs",
     imageSrc: "../../src/assets/verbos-en-ingles.png",
     imageAlt: "English verbs",
   },
@@ -96,11 +96,19 @@ const CoursesDisplay = () => {
         <h2 className="text-5xl text-center font-bold text-[#1b3679] leading-tight font-dosis pb-8 pt-8">
           Ensure you keep progressing
         </h2>
-        <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 xl:gap-x-8 py-4">
+        <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-8 py-4">
           {products.map((product, index) => (
             <>
-              {/* Insert an H3 header before course 7 */}
+              {/* Cambridge Courses */}
               {index === 6 && (
+                <div className="col-span-full flex justify-center items-center">
+                  <h2 className="text-5xl text-center font-bold text-[#1b3679] leading-tight font-dosis pb-8 pt-8">
+                    Cambridge Courses
+                  </h2>
+                </div>
+              )}
+              {/* Specialized Courses */}
+              {index === 9 && (
                 <div className="col-span-full flex justify-center items-center">
                   <h2 className="text-5xl text-center font-bold text-[#1b3679] leading-tight font-dosis pb-8 pt-8">
                     Specialized Courses
