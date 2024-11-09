@@ -7,19 +7,61 @@
           "id": "Lesson1",
           "title": "Lesson 1 Title",
           "content": "This is the content for Lesson 1 in Unit 1 of A1.",
-          "exercises": ["Exercise 1", "Exercise 2"]
+          "exercises": ["Exercise 1", "Exercise 2"],
+          "sublessons": [
+            {
+              "id": "Lesson1.1",
+              "title": "Lesson 1.1 Title",
+              "content": "This is the content for Sublesson 1.1.",
+              "exercises": ["Exercise 1"]
+            },
+            {
+              "id": "Lesson1.2",
+              "title": "Lesson 1.2 Title",
+              "content": "This is the content for Sublesson 1.2.",
+              "exercises": ["Exercise 1", "Exercise 2"]
+            }
+          ]
         },
         {
           "id": "Lesson2",
           "title": "Lesson 2 Title",
           "content": "This is the content for Lesson 2 in Unit 1 of A1.",
-          "exercises": ["Exercise 1", "Exercise 2"]
+          "exercises": ["Exercise 1", "Exercise 2"],
+          "sublessons": [
+            {
+              "id": "Lesson2.1",
+              "title": "Lesson 2.1 Title",
+              "content": "This is the content for Sublesson 2.1.",
+              "exercises": ["Exercise 1"]
+            },
+            {
+              "id": "Lesson2.2",
+              "title": "Lesson 2.2 Title",
+              "content": "This is the content for Sublesson 2.2.",
+              "exercises": ["Exercise 1", "Exercise 2"]
+            }
+          ]
         },
         {
           "id": "Lesson3",
           "title": "Lesson 3 Title",
           "content": "This is the content for Lesson 2 in Unit 1 of A1.",
-          "exercises": ["Exercise 1", "Exercise 2"]
+          "exercises": ["Exercise 1", "Exercise 2"],
+          "sublessons": [
+            {
+              "id": "Lesson3.1",
+              "title": "Lesson 3.1 Title",
+              "content": "This is the content for Sublesson 3.1.",
+              "exercises": ["Exercise 1"]
+            },
+            {
+              "id": "Lesson3.2",
+              "title": "Lesson 2.2 Title",
+              "content": "This is the content for Sublesson 3.2.",
+              "exercises": ["Exercise 1", "Exercise 2"]
+            }
+          ]
         },
         {
           "id": "Lesson4",

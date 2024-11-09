@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaCheckCircle, FaBook, FaGraduationCap } from "react-icons/fa";
 import { TfiBlackboard } from "react-icons/tfi";
@@ -11,9 +12,30 @@ const curriculumData = [
     icon: GiJourney,
     title: "UNIT 1",
     lessons: [
-      { title: "Lesson 1", path: "/lessons/A1/Unit1/Lesson1" },
-      { title: "Lesson 2", path: "/lessons/A1/Unit1/Lesson2" },
-      { title: "Lesson 3", path: "/lessons/A1/Unit1/Lesson3" },
+      {
+        title: "Lesson 1",
+        path: "/lessons/A1/Unit1/Lesson1",
+        sublessons: [
+          { title: "Lesson 1.1", path: "/lessons/A1/Unit1/Lesson1.1" },
+          { title: "Lesson 1.2", path: "/lessons/A1/Unit1/Lesson1.2" },
+        ],
+      },
+      {
+        title: "Lesson 2",
+        path: "/lessons/A1/Unit1/Lesson2",
+        sublessons: [
+          { title: "Lesson 2.1", path: "/lessons/A1/Unit1/Lesson2.1" },
+          { title: "Lesson 2.2", path: "/lessons/A1/Unit1/Lesson2.2" },
+        ],
+      },
+      {
+        title: "Lesson 3",
+        path: "/lessons/A1/Unit1/Lesson3",
+        sublessons: [
+          { title: "Lesson 3.1", path: "/lessons/A1/Unit1/Lesson3.1" },
+          { title: "Lesson 3.2", path: "/lessons/A1/Unit1/Lesson3.2" },
+        ],
+      },
       { title: "Lesson 4", path: "/lessons/A1/Unit1/Lesson4" },
       { title: "Lesson 5", path: "/lessons/A1/Unit1/Lesson5" },
     ],
@@ -77,10 +99,18 @@ const curriculumData = [
 ];
 
 const Curriculum = () => {
+  // State to track which lesson is open
+  const [openLessonIndex, setOpenLessonIndex] = useState(null);
+
+  // Function to toggle dropdown
+  const toggleDropdown = (index) => {
+    setOpenLessonIndex(openLessonIndex === index ? null : index);
+  };
+
   return (
-    <section class="bg-[#F6E4CC] py-8 md:py-16">
-      <div class="mx-auto max-w-screen-xl px-4 2xl:px-0">
-        <h2 class="text-4xl md:text-6xl text-center font-bold font-dosis text-[#1C4F59] py-4">
+    <section className="bg-[#F6E4CC] py-8 md:py-16">
+      <div className="mx-auto max-w-screen-xl px-4 2xl:px-0">
+        <h2 className="text-4xl md:text-6xl text-center font-bold font-dosis text-[#1C4F59] py-4">
           Study Plan
         </h2>
 
@@ -95,17 +125,52 @@ const Curriculum = () => {
                 <unit.icon className="text-[#1C4F59] text-6xl md:text-5xl lg:text-6xl" />
               </div>
 
-              {/* Right Inner Div for Bullet Points */}
+              {/* Right Inner Div for Lessons */}
               <div className="p-4 rounded-xl w-full text-[#1C4F59] bg-[#fab51a]">
                 <ul className="list-disc pl-5 space-y-2 text-xl md:text-2xl font-semibold font-dosis">
                   {unit.lessons.map((lesson, i) => (
-                    <li key={i}>
-                      <Link
-                        to={lesson.path}
-                        className="text-[#1C4F59] hover:underline"
+                    <li key={i} className="relative">
+                      {/* Main Lesson Title (Dropdown Toggle) */}
+                      <button
+                        onClick={() => toggleDropdown(i)}
+                        className="flex items-center w-full text-left text-[#1C4F59] hover:underline focus:outline-none"
                       >
-                        {lesson.title}
-                      </Link>
+                        {/* Title container with fixed width */}
+                        <div className="w-38 flex-shrink-0">{lesson.title}</div>
+                        {/* Dropdown Arrow */}
+                        <svg
+                          className={`w-5 h-5 ml-2 transform transition-transform ${
+                            openLessonIndex === i ? "rotate-180" : ""
+                          }`}
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="M19 9l-7 7-7-7"
+                          />
+                        </svg>
+                      </button>
+
+                      {/* Sublessons Dropdown */}
+                      {openLessonIndex === i && lesson.sublessons && (
+                        <ul className="mt-2 ml-6 list-disc text-lg font-medium text-[#1C4F59]">
+                          {lesson.sublessons.map((sublesson, j) => (
+                            <li key={j}>
+                              <Link
+                                to={sublesson.path}
+                                className="text-[#1C4F59] hover:underline"
+                              >
+                                {sublesson.title}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
                     </li>
                   ))}
                 </ul>
