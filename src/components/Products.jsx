@@ -54,7 +54,7 @@ const products = [
   {
     id: 7,
     category: "B2Cambridge",
-    name: "B2First",
+    name: "First",
     description: "Pass the B2 Cambrdige Exam!",
     imageSrc: "src/assets/b2_first.png",
     imageAlt: "B2 Cambrdige",
@@ -62,7 +62,7 @@ const products = [
   {
     id: 8,
     category: "C1Cambridge",
-    name: "C1Advanced",
+    name: "Advanced",
     description: "Pass the C1 Cambrdige Exam!",
     imageSrc: "src/assets/c1_advanced.png",
     imageAlt: "C1 Cambrdige",
@@ -70,7 +70,7 @@ const products = [
   {
     id: 9,
     category: "C2Cambridge",
-    name: "C2Proficiency",
+    name: "Proficiency",
     description: "Pass the C2 Cambrdige Exam",
     imageSrc: "src/assets/c2_pro.png",
     imageAlt: "C2 Cambridge",
@@ -78,7 +78,7 @@ const products = [
   {
     id: 10,
     category: "Pronunciation",
-    name: "Pronunciation",
+    name: "EnglishPronunciation",
     description: "Learn all about English Pronunciation",
     imageSrc: "src/assets/pronunciacion-en-ingles.png",
     imageAlt: "English Pronunciation",

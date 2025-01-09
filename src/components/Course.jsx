@@ -24,11 +24,11 @@ function Course() {
     Vantage: <Vantage />,
     Advanced: <Advanced />,
     Mastery: <Mastery />,
-    B2First: <B2 />,
-    C1Advanced: <C1 />,
-    C2Proficiency: <C2 />,
+    First: <B2 />,
+    Advanced: <C1 />,
+    Proficiency: <C2 />,
     Grammar: <Grammar />,
-    Pronunciation: <Pronunciation />,
+    EnglishPronunciation: <Pronunciation />,
     Verbs: <Verbs />,
   };
 
