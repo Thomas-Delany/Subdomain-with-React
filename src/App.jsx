@@ -19,7 +19,7 @@ function App() {
         {/* Dynamic route for individual courses */}
         <Route path="/courses/:category/:courseName" element={<Course />} />
 
-        {/* Dynamoc route for individual lesson pages */}
+        {/* Dynamic route for individual lesson pages */}
         <Route
           path="/lessons/:course/:unit/:lessonId"
           element={<LessonPage />}
