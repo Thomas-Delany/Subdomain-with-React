@@ -9,7 +9,7 @@ const Vantage = () => {
     <div> 
     <Hero />
     <Curriculum />
-    <NextLevel />
+    <NextLevel category="C1" name="Advanced" />
     <CoursesDisplay /> 
     </div>
   );

@@ -9,7 +9,7 @@ const WayStage = () => {
     <div>
     <Hero />
     <Curriculum />
-    <NextLevel />
+    <NextLevel category="B1" name="ThresHold" />
     <CoursesDisplay />
     </div>
   );

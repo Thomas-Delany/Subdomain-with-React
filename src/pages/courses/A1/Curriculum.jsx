@@ -12,30 +12,9 @@ const curriculumData = [
     icon: GiJourney,
     title: "UNIT 1",
     lessons: [
-      {
-        title: "Lesson 1",
-        path: "/lessons/A1/Unit1/Lesson1",
-        sublessons: [
-          { title: "Lesson 1.1", path: "/lessons/A1/Unit1/Lesson1.1" },
-          { title: "Lesson 1.2", path: "/lessons/A1/Unit1/Lesson1.2" },
-        ],
-      },
-      {
-        title: "Lesson 2",
-        path: "/lessons/A1/Unit1/Lesson2",
-        sublessons: [
-          { title: "Lesson 2.1", path: "/lessons/A1/Unit1/Lesson2.1" },
-          { title: "Lesson 2.2", path: "/lessons/A1/Unit1/Lesson2.2" },
-        ],
-      },
-      {
-        title: "Lesson 3",
-        path: "/lessons/A1/Unit1/Lesson3",
-        sublessons: [
-          { title: "Lesson 3.1", path: "/lessons/A1/Unit1/Lesson3.1" },
-          { title: "Lesson 3.2", path: "/lessons/A1/Unit1/Lesson3.2" },
-        ],
-      },
+      { title: "Lesson 1", path: "/lessons/A1/Unit1/Lesson1" },
+      { title: "Lesson 2", path: "/lessons/A1/Unit1/Lesson2" },
+      { title: "Lesson 3", path: "/lessons/A1/Unit1/Lesson3" },
       { title: "Lesson 4", path: "/lessons/A1/Unit1/Lesson4" },
       { title: "Lesson 5", path: "/lessons/A1/Unit1/Lesson5" },
     ],

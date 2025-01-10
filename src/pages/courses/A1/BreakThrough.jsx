@@ -9,7 +9,7 @@ const BreakThrough = () => {
     <div>
     <Hero />
     <Curriculum />
-    <NextLevel />
+    <NextLevel category="A2" name="WayStage" />
     <CoursesDisplay />
     </div>
   );

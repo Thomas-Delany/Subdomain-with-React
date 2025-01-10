@@ -9,7 +9,7 @@ const ThresHold = () => {
     <div>
      <Hero />
      <Curriculum />
-     <NextLevel />
+     <NextLevel category="B2" name="Vantage" />
      <CoursesDisplay /> 
     </div>
   );

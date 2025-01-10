@@ -5,49 +5,56 @@ const baseUrl = import.meta.env.VITE_BASE_URL;
 const products = [
   {
     id: 1,
-    href: `${baseUrl}courses/C2/Mastery`,
+    category: "C2",
+    name: "Mastery",
     description: "C2 —  Mastery",
     imageSrc: "../../src/assets/C2-new.png",
     imageAlt: "C2 Mastery",
   },
   {
     id: 2,
-    href: `${baseUrl}courses/Cambridge-First/B2`,
+    category: "B2Cambridge",
+    name: "First",
     description: "Pass the B2 Cambrdige Exam!",
     imageSrc: "../../src/assets/b2_first.png",
     imageAlt: "B2 Cambrdige",
   },
   {
     id: 3,
-    href: `${baseUrl}courses/Cambridge-Advanced/C1`,
+    category: "C1Cambridge",
+    name: "Advanced",
     description: "Pass the C1 Cambrdige Exam!",
     imageSrc: "../../src/assets/c1_advanced.png",
     imageAlt: "C1 Cambrdige",
   },
   {
     id: 4,
-    href: `${baseUrl}courses/Cambridge-Proficiency/C2`,
+    category: "C2Cambridge",
+    name: "Proficiency",
     description: "Pass the C2 Cambrdige Exam",
     imageSrc: "../../src/assets/c2_pro.png",
     imageAlt: "C2 Cambrdige",
   },
   {
     id: 5,
-    href: `${baseUrl}courses/English-Pronunciation/Pronunciation`,
+    category: "Pronunciation",
+    name: "EnglishPronunciation",
     description: "Learn all about English Pronunciation",
     imageSrc: "../../src/assets/pronunciacion-en-ingles.png",
     imageAlt: "English Pronunciation",
   },
   {
     id: 6,
-    href: `${baseUrl}courses/English-Grammar/Grammar`,
+    category: "EnglishGrammar",
+    name: "Grammar",
     description: "Learn the Essentials of English Grammar",
     imageSrc: "../../src/assets/Gramatica-esencial.png",
     imageAlt: "English Grammar",
   },
   {
     id: 7,
-    href: `${baseUrl}courses/Verbs-In-English/Verbs`,
+    category: "VerbsInEnglish",
+    name: "Verbs",
     description: "Everything to do with English Verbs",
     imageSrc: "../../src/assets/verbos-en-ingles.png",
     imageAlt: "English verbs",
@@ -67,7 +74,7 @@ const CoursesDisplay = () => {
           {products.slice(0, 1).map((product) => (
             <Link
               key={product.id}
-              to={product.href}
+              to={`/courses/${product.category}/${product.name}`}
               className="group bg-white rounded-lg w-full sm:max-w-sm"
             >
               <div className="w-full overflow-hidden rounded-t-lg">
@@ -108,7 +115,7 @@ const CoursesDisplay = () => {
                   </h2>
                 </div>
               )}
-              <Link to={product.href} className="group bg-white rounded-lg">
+              <Link to={`/courses/${product.category}/${product.name}`} className="group bg-white rounded-lg">
                 <div className="w-full overflow-hidden rounded-t-lg">
                   <img
                     alt={product.imageAlt}
