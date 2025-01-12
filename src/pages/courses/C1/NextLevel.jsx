@@ -20,7 +20,7 @@ const NextLevel = ({ category, name }) => {
             Time to level up!
           </h1>
           <p className="hidden md:block max-w-2xl mb-4 font-bold font-dosis text-[#ffffff] lg:mb-8 md:text-lg lg:text-xl text-left">
-            Get started with C1 — Advanced to continue improving.
+            Get started with C2 — Mastery to continue improving.
           </p>
           <div className="space-x-2 text-center lg:text-left pt-5 md:pt-1">
             <Link to={`/courses/${category}/${name}`}>

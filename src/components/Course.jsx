@@ -25,7 +25,7 @@ function Course() {
     Advanced: <Advanced />,
     Mastery: <Mastery />,
     First: <B2 />,
-    Advanced: <C1 />,
+    AdvancedNew: <C1 />,
     Proficiency: <C2 />,
     Grammar: <Grammar />,
     EnglishPronunciation: <Pronunciation />,

@@ -38,7 +38,7 @@ const products = [
   {
     id: 5,
     category: "C1Cambridge",
-    name: "Advanced",
+    name: "AdvancedNew",
     description: "Pass the C1 Cambrdige Exam!",
     imageSrc: "../../src/assets/c1_advanced.png",
     imageAlt: "C1 Cambrdige",

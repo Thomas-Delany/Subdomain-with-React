@@ -9,7 +9,7 @@ const C1 = () => {
     <div>
       <Hero />
       <Curriculum />
-      <NextLevel />
+      <NextLevel category="C2Cambridge" name="Proficiency" />
       <CoursesDisplay />
     </div>
   );

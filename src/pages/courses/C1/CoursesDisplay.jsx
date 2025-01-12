@@ -4,14 +4,6 @@ import { Link } from "react-router-dom";
 const products = [
   {
     id: 1,
-    category: "C2",
-    name: "Mastery",
-    description: "C2 —  Mastery",
-    imageSrc: "../../src/assets/C2-new.png",
-    imageAlt: "C2 Mastery",
-  },
-  {
-    id: 2,
     category: "B2Cambridge",
     name: "First",
     description: "Pass the B2 Cambrdige Exam!",
@@ -19,15 +11,15 @@ const products = [
     imageAlt: "B2 Cambrdige",
   },
   {
-    id: 3,
+    id: 2,
     category: "C1Cambridge",
-    name: "Advanced",
+    name: "AdvancedNew",
     description: "Pass the C1 Cambrdige Exam!",
     imageSrc: "../../src/assets/c1_advanced.png",
     imageAlt: "C1 Cambrdige",
   },
   {
-    id: 4,
+    id: 3,
     category: "C2Cambridge",
     name: "Proficiency",
     description: "Pass the C2 Cambrdige Exam",
@@ -35,7 +27,7 @@ const products = [
     imageAlt: "C2 Cambrdige",
   },
   {
-    id: 5,
+    id: 4,
     category: "Pronunciation",
     name: "EnglishPronunciation",
     description: "Learn all about English Pronunciation",
@@ -43,7 +35,7 @@ const products = [
     imageAlt: "English Pronunciation",
   },
   {
-    id: 6,
+    id: 5,
     category: "EnglishGrammar",
     name: "Grammar",
     description: "Learn the Essentials of English Grammar",
@@ -51,7 +43,7 @@ const products = [
     imageAlt: "English Grammar",
   },
   {
-    id: 7,
+    id: 6,
     category: "VerbsInEnglish",
     name: "Verbs",
     description: "Everything to do with English Verbs",
@@ -64,14 +56,11 @@ const CoursesDisplay = () => {
   return (
     <div className="bg-[#e2edf1] flex items-center justify-center">
       <div className="mx-auto max-w-2xl px-16 py-6 sm:px-6 sm:py-24 md:pt-4 lg:max-w-7xl lg:px-8">
-        <h2 className="text-5xl text-center font-bold text-[#1b3679] leading-tight font-dosis pb-8 pt-8">
-          Ensure you keep progressingcnhgj
-        </h2>
         <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-8 py-4">
           {products.map((product, index) => (
             <>
               {/* Cambridge Courses */}
-              {index === 1 && (
+              {index === 0 && (
                 <div className="col-span-full flex justify-center items-center">
                   <h2 className="text-5xl text-center font-bold text-[#1b3679] leading-tight font-dosis pb-8 pt-8">
                     Cambridge Courses
@@ -79,7 +68,7 @@ const CoursesDisplay = () => {
                 </div>
               )}
               {/* Specialized Courses */}
-              {index === 4 && (
+              {index === 3 && (
                 <div className="col-span-full flex justify-center items-center">
                   <h2 className="text-5xl text-center font-bold text-[#1b3679] leading-tight font-dosis pb-8 pt-8">
                     Specialized Courses
