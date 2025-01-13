@@ -36,7 +36,11 @@ function Course() {
 
   return (
     <div>
-      {selectedCourse} || <h1>Course not found</h1>
+      {selectedCourse ? (
+        selectedCourse
+      ) : (
+        <h1>Course not found</h1>
+      )}
     </div>
   );
 }
