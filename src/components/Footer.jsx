@@ -81,7 +81,7 @@ const socialLinks = [
 
 function Footer() {
   return (
-    <footer className="bg-[#00C699] text-white font-dosis flex flex-col items-center">
+    <footer className="bg-green-500 text-white font-dosis flex flex-col items-center">
       <div className="container p-6">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 justify-items-center text-center md:text-left">
           {/* Our Courses */}
