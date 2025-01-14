@@ -1,4 +1,15 @@
-import B1Image from "../../../assets/B1-new.png";
+import A1Image from "../assets/A1-new.png"
+import A2Image from "../assets/A2-new.png"
+import B1Image from "../assets/B1-new.png";
+import B2Image from "../assets/B2-new.png";
+import C1Image from "../assets/C1-new.png";
+import C2Image from "../assets/C2-new.png";
+import B2CambridgeImage from "../assets/b2_first.png";
+import C1CambridgeImage from "../assets/c1_advanced.png";
+import C2CambridgeImage from "../assets/c2_pro.png";
+import PronunciationImage from "../assets/pronunciacion-en-ingles.png";
+import GrammarImage from "../assets/Gramatica-esencial.png";
+import VerbsImage from "../assets/verbos-en-ingles.png";
  
  export const courseData = [
     {
@@ -6,7 +17,7 @@ import B1Image from "../../../assets/B1-new.png";
         category: "A1",
         name: "BreakThrough",
         description: "A1 —  BreakThrough",
-        imageSrc: "../src/assets/A1-new.png",
+        imageSrc: A1Image,
         imageAlt: "A1 BreakThrough",
       },
       {
@@ -14,7 +25,7 @@ import B1Image from "../../../assets/B1-new.png";
         category: "A2",
         name: "WayStage",
         description: "A2 — WayStage",
-        imageSrc: "../../src/assets/A2-new.png",
+        imageSrc: A2Image,
         imageAlt: "A2 WayStage",
       },
       {
@@ -30,7 +41,7 @@ import B1Image from "../../../assets/B1-new.png";
         category: "B2",
         name: "Vantage",
         description: "B2 —  Vantage",
-        imageSrc: "src/assets/B2-new.png",
+        imageSrc: B2Image,
         imageAlt: "B2 Vantage",
       },
       {
@@ -38,7 +49,7 @@ import B1Image from "../../../assets/B1-new.png";
         category: "C1",
         name: "Advanced",
         description: "C1 —  Advanced",
-        imageSrc: "src/assets/C1-new.png",
+        imageSrc: C1Image,
         imageAlt: "C1 Advanced",
       },
       {
@@ -46,7 +57,7 @@ import B1Image from "../../../assets/B1-new.png";
         category: "C2",
         name: "Mastery",
         description: "C2 —  Mastery",
-        imageSrc: "src/assets/C2-new.png",
+        imageSrc: C2Image,
         imageAlt: "C2 Mastery",
       },
       {
@@ -54,7 +65,7 @@ import B1Image from "../../../assets/B1-new.png";
         category: "B2Cambridge",
         name: "First",
         description: "Pass the B2 Cambrdige Exam!",
-        imageSrc: "src/assets/b2_first.png",
+        imageSrc: B2CambridgeImage,
         imageAlt: "B2 Cambrdige",
       },
       {
@@ -62,7 +73,7 @@ import B1Image from "../../../assets/B1-new.png";
         category: "C1Cambridge",
         name: "AdvancedNew",
         description: "Pass the C1 Cambrdige Exam!",
-        imageSrc: "src/assets/c1_advanced.png",
+        imageSrc: C1CambridgeImage,
         imageAlt: "C1 Cambrdige",
       },
       {
@@ -70,7 +81,7 @@ import B1Image from "../../../assets/B1-new.png";
         category: "C2Cambridge",
         name: "Proficiency",
         description: "Pass the C2 Cambrdige Exam",
-        imageSrc: "src/assets/c2_pro.png",
+        imageSrc: C2CambridgeImage,
         imageAlt: "C2 Cambridge",
       },
       {
@@ -78,7 +89,7 @@ import B1Image from "../../../assets/B1-new.png";
         category: "Pronunciation",
         name: "EnglishPronunciation",
         description: "Learn all about English Pronunciation",
-        imageSrc: "src/assets/pronunciacion-en-ingles.png",
+        imageSrc: PronunciationImage,
         imageAlt: "English Pronunciation",
       },
       {
@@ -86,7 +97,7 @@ import B1Image from "../../../assets/B1-new.png";
         category: "EnglishGrammar",
         name: "Grammar",
         description: "Learn the Essentials of English Grammar",
-        imageSrc: "src/assets/Gramatica-esencial.png",
+        imageSrc: GrammarImage,
         imageAlt: "English Grammar",
       },
       {
@@ -94,7 +105,7 @@ import B1Image from "../../../assets/B1-new.png";
         category: "VerbsInEnglish",
         name: "Verbs",
         description: "Auxiliaries, Modals, Copulas, Active & Passive Voice, Get...",
-        imageSrc: "src/assets/verbos-en-ingles.png",
+        imageSrc: VerbsImage,
         imageAlt: "English verbs",
       },
 ];
