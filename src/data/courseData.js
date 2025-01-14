@@ -109,4 +109,3 @@ import VerbsImage from "../assets/verbos-en-ingles.png";
         imageAlt: "English verbs",
       },
 ];
-

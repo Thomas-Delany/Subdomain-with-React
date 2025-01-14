@@ -2,6 +2,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
 import Products from "./components/Products";
 import Course from "./components/Course";
 import Footer from "./components/Footer";
@@ -13,8 +14,15 @@ function App() {
       <ScrollToTop />
       <Navbar />
       <Routes>
-        {/* Homepage */}
-        <Route path="/" element={<Products />} />
+        <Route
+        path="/"
+        element={
+          <>
+          <Hero />
+          <Products />
+          </>
+        }
+        />
 
         {/* Dynamic route for individual courses */}
         <Route path="/courses/:category/:courseName" element={<Course />} />
