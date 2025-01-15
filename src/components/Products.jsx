@@ -105,23 +105,23 @@ const products = [
 function Products() {
   return (
     <div className="bg-green-500 min-h-screen flex items-center justify-center">
-      <div className="mx-auto max-w-2xl px-16 py-2 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-        <h2 className="sr-only">Products</h2>
+      <div className="mx-auto max-w-2xl px-16 py-2 sm:px-6 sm:py-8 lg:max-w-7xl lg:px-8">
+        <h2 className="text-4xl md:text-5xl text-center font-bold text-white leading-tight font-dosis py-4">Select Your Level</h2>  
         <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-8 py-4">
           {products.map((product, index) => (
             <>
               {/* Cambridge Courses Display */}
               {index === 6 && (
-                <div className="col-span-full flex justify-center items-center pt-8">
-                  <h2 className="text-5xl text-center font-bold text-white leading-tight font-dosis">
+                <div className="col-span-full flex justify-center items-center py-4">
+                  <h2 className="text-4xl md:text-5xl text-center font-bold text-white font-dosis">
                     Cambridge
                   </h2>
                 </div>
               )}
               {/* Cambridge Courses Display */}
               {index === 9 && (
-                <div className="col-span-full flex justify-center items-center pt-8">
-                  <h2 className="text-5xl text-center font-bold text-white leading-tight font-dosis">
+                <div className="col-span-full flex justify-center items-center py-4">
+                  <h2 className="text-4xl md:text-5xl text-center font-bold text-white font-dosis">
                     Specialized
                   </h2>
                 </div>
@@ -148,11 +148,6 @@ function Products() {
               </Link>
             </>
           ))}
-        </div>
-        <div className="flex justify-center pt-4">
-          <button className="px-32 py-3 bg-[rgb(79,70,229)] text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75">
-            Get started!
-          </button>
         </div>
       </div>
     </div>
