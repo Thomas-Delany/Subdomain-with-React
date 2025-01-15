@@ -9,13 +9,12 @@ const courses = [
   { href: `${baseUrl}courses/B2/Vantage`, label: "B2 — Vantage" },
   { href: `${baseUrl}courses/C1/Advanced`, label: "C1 — Advanced" },
   { href: `${baseUrl}courses/C2/Mastery`, label: "C2 — Mastery" },
-  { href: "#", label: "B2 Cambridge First" },
-  { href: "#", label: "C1 Cambridge Advanced" },
-  { href: "#", label: "C2 Cambridge Proficiency" },
-  { href: "#", label: "Gramática Esencial" },
-  { href: "#", label: "Verbos en Inglés" },
-  { href: "#", label: "Pronunciación en Inglés" },
-  { href: "#", label: "Take a Free Course!" },
+  { href: `${baseUrl}courses/B2Cambridge/First`, label: "B2 Cambridge First"},
+  { href: `${baseUrl}courses/C1Cambridge/AdvancedNew`, label: "C1 Cambridge Advanced"},
+  { href: `${baseUrl}courses/C2Cambridge/Proficiency`, label: "C2 Cambridge Proficiency"},
+  { href: `${baseUrl}courses/EnglishGrammar/Grammar`, label: "English Grammar"},
+  { href: `${baseUrl}courses/VerbsInEnglish/Verbs`, label: "Verbs In English"},
+  { href: `${baseUrl}courses/Pronunciation/EnglishPronunciation`, label: "Pronunciation"},
 ];
 
 const reservoirLinks = [
@@ -81,7 +80,7 @@ const socialLinks = [
 
 function Footer() {
   return (
-    <footer className="bg-green-500 text-white font-dosis flex flex-col items-center">
+    <footer className="bg-[#00C699] text-white font-dosis flex flex-col items-center">
       <div className="container p-6">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 justify-items-center text-center md:text-left">
           {/* Our Courses */}
