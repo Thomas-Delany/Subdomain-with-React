@@ -1,13 +1,8 @@
-import {
-  GiJourney,
-  TfiBlackboard,
-  FaCheckCircle,
-  FaBook,
-  FaGraduationCap,
-  LiaDumbbellSolid,
-  GiChampions,
-  IoStar,
-} from "react-icons/all";
+import { FaGraduationCap } from "react-icons/fa";
+import { TfiBlackboard } from "react-icons/tfi";
+import { LiaDumbbellSolid } from "react-icons/lia";
+import { GiJourney, GiChampions } from "react-icons/gi";
+import { IoStar } from "react-icons/io5";
 
 const curriculumData = {
   A1: [

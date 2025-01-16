@@ -14,7 +14,7 @@ const Products = () => {
       <h2 className="text-4xl md:text-5xl text-center font-bold text-white leading-tight font-dosis py-4">
         {title}
       </h2>
-      <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-8 py-4">
+      <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-8 py-6">
         {courses.map((product) => (
           <Link
             key={product.id}
@@ -43,11 +43,11 @@ const Products = () => {
 
   return (
     <div className="bg-[#00C699] min-h-screen flex items-center justify-center">
-      <div className="mx-auto max-w-2xl px-16 py-2 sm:px-6 sm:py-8 lg:max-w-7xl lg:px-8">
+      <div className="mx-auto max-w-2xl px-16 py-6 sm:px-6 lg:max-w-7xl lg:px-8">
         {/* Render course sections */}
-        {renderCoursesSection("Ensure you keep progressing", progressingCourses)}
-        {renderCoursesSection("Cambridge Courses", cambridgeCourses)}
-        {renderCoursesSection("Specialized Courses", specializedCourses)}
+        {renderCoursesSection("Select Your Level", progressingCourses)}
+        {renderCoursesSection("Cambridge Exams", cambridgeCourses)}
+        {renderCoursesSection("Specialized Learning", specializedCourses)}
       </div>
     </div>
   );
