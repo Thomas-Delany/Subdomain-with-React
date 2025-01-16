@@ -4,10 +4,11 @@ import Curriculum from "./Curriculum";
 import CoursesDisplay from "./CourseDisplay";
 
 const Grammar = () => {
+  const courseId = "Grammar";
   return (
     <div>
       <Hero />
-      <Curriculum />
+      <Curriculum courseId={courseId} />
       <CoursesDisplay />
     </div>
   );

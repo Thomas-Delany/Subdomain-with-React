@@ -6,21 +6,22 @@ import CoursesDisplay from "./CoursesDisplay";
 import { courseData } from "../../../data/courseData";
 
 const WayStage = () => {
-   const currentCourseIndex = courseData.findIndex(
-      (product) => product.name === "WayStage"
-    );
-  
-    const nextCourse = courseData[currentCourseIndex + 1] || null;
+  const courseId = "A2";
+  const currentCourseIndex = courseData.findIndex(
+    (product) => product.name === "WayStage"
+  );
+
+  const nextCourse = courseData[currentCourseIndex + 1] || null;
   return (
     <div>
-    <Hero />
-    <Curriculum />
-    {nextCourse ? (
+      <Hero />
+      <Curriculum courseId={courseId} />
+      {nextCourse ? (
         <NextLevel category={nextCourse.category} name={nextCourse.name} />
       ) : (
         <h2>No Next Level</h2>
       )}
-    <CoursesDisplay />
+      <CoursesDisplay />
     </div>
   );
 };
