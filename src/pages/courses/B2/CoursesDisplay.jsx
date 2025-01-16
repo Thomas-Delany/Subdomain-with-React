@@ -15,10 +15,10 @@ const CoursesDisplay = () => {
       </h2>
       <div
         className={`grid ${courses.length === 1
-            ? "grid-cols-1 justify-center items-center place-items-center"
-            : courses.length === 3
-              ? "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center"
-              : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-4"
+          ? "grid-cols-1 justify-center items-center place-items-center"
+          : courses.length > 1
+            ? "grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 lg:gap-x-8 py-4"
+            : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-4"
           } gap-x-6 gap-y-10 xl:gap-x-8 py-4`}
       >
         {courses.map((product) => (
