@@ -94,7 +94,7 @@ function Navbar() {
 
       {/* Mobile menu */}
       <div
-        className={`${isOpen ? "block" : "hidden"} sm:hidden`}
+        className={`${isOpen ? "absolute" : "hidden"} sm:hidden top-24 left-0 w-full bg-white shadow-lg z-50`}
         id="mobile-menu"
       >
         <div className="px-2 pt-2 pb-3 space-y-1">
