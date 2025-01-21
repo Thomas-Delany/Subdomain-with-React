@@ -2,6 +2,21 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 const baseUrl = import.meta.env.VITE_BASE_URL;
 
+const menuItems = [
+  {
+    label: "log In",
+    href: "#",
+  },
+  {
+    label: "Reservoir!",
+    href: "https://englishreservoir.co.uk/",
+  },
+  {
+    label: "Affiliate",
+    href: "#",
+  },
+];
+
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
