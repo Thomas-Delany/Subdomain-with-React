@@ -2,19 +2,10 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 const baseUrl = import.meta.env.VITE_BASE_URL;
 
-const menuItems = [
-  {
-    label: "log In",
-    href: "#",
-  },
-  {
-    label: "Reservoir!",
-    href: "https://englishreservoir.co.uk/",
-  },
-  {
-    label: "Affiliate",
-    href: "#",
-  },
+const navLinks = [
+  { href: "#", label: "Log in" },
+  { href: "https://englishreservoir.co.uk/", label: "Reservoir!" },
+  { href: "https://englishreservoir.co.uk/affiliate", label: "Affiliate" },
 ];
 
 function Navbar() {
@@ -38,24 +29,15 @@ function Navbar() {
           {/* Links on the right */}
           <div className="hidden sm:block">
             <div className="flex items-center justify-end space-x-4">
-              <a
-                href="https://cursos.englishreservoir.com/sign_in"
-                className="text-black hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-              >
-                Log in
-              </a>
-              <a
-                href="https://englishreservoir.co.uk/"
-                className="text-black hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-              >
-                Reservoir!
-              </a>
-              <a
-                href="https://englishreservoir.co.uk/affiliate"
-                className="text-black hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-              >
-                Affiliate
-              </a>
+              {navLinks.map((item) => (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  className="text-black hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                >
+                  {item.label}
+                </a>
+              ))}
             </div>
           </div>
 
@@ -113,24 +95,15 @@ function Navbar() {
         id="mobile-menu"
       >
         <div className="px-2 pt-2 pb-3 space-y-1">
-          <a
-            href="#"
-            className="text-black hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-          >
-            Home
-          </a>
-          <a
-            href="#"
-            className="text-black hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-          >
-            About
-          </a>
-          <a
-            href="#"
-            className="text-black hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-          >
-            Contact
-          </a>
+          {navLinks.map((item) => (
+            <a
+              key={item.href}
+              href={item.href}
+              className="text-black hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            >
+              {item.label}
+            </a>
+          ))}
         </div>
       </div>
     </nav>
