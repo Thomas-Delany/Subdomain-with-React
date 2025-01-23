@@ -10,9 +10,9 @@ const Curriculum = ({ courseId }) => {
     return <div>Error: Curriculum data not found for {courseId}</div>;
   }
   return (
-    <section class="bg-[#f4592f] py-8 md:py-16">
-      <div class="mx-auto max-w-screen-xl px-4 2xl:px-0">
-        <h2 class="text-4xl md:text-6xl text-center font-bold font-dosis text-[#0a1f41] py-4">
+    <section className="bg-[#f4592f] py-8 md:py-16">
+      <div className="mx-auto max-w-screen-xl px-4 2xl:px-0">
+        <h2 className="text-4xl md:text-6xl text-center font-bold font-dosis text-[#0a1f41] py-4">
           Study Plan
         </h2>
 

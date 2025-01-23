@@ -822,5 +822,4 @@ const curriculumData = {
     },
   ],
 };
-
 export default curriculumData;
