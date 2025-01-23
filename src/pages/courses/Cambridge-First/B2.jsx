@@ -4,9 +4,12 @@ import Curriculum from "./Curriculum";
 import NextLevel from "./NextLevel";
 import CoursesDisplay from "./CourseDisplay";
 import { courseData } from "../../../data/courseData";
+import curriculumData from "../../../data/curriculumData";
 
 const B2 = () => {
-  const courseId = "First";
+  const courseId = "B2";
+  const courseUnit = curriculumData[courseId];
+
   const currentCourseIndex = courseData.findIndex(
     (product) => product.name === "First"
   );
@@ -15,7 +18,7 @@ const B2 = () => {
   return (
     <div>
       <Hero />
-      <Curriculum courseId={courseId} />
+      <Curriculum unit={courseUnit} />
       {nextCourse ? (
         <NextLevel category={nextCourse.category} name={nextCourse.name} />
       ) : (
