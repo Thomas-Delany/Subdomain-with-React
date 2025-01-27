@@ -1,8 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import LessonTemplate from "../components/LessonTemplate";
-import NextLessonButton from "../components/NextLessonButton";
-import PreviousLessonButton from "../components/PreviousLessonButton";
 
 const LessonPage = () => {
   const { course, unit, lessonId } = useParams(); // Get dynamic route parameters
@@ -70,7 +68,6 @@ const LessonPage = () => {
   return (
     <LessonTemplate
       title={lessonData.title}
-      videoUrl={lessonData.videoUrl}
       content={lessonData.content}
       exercises={lessonData.exercises}
       prevLessonPath={prevLessonPath}

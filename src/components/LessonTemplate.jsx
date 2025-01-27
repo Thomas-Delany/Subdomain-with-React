@@ -3,7 +3,6 @@ import PreviousLessonButton from "./PreviousLessonButton";
 
 const LessonTemplate = ({
   title,
-  videoUrl,
   content,
   exercises,
   prevLessonPath,
@@ -16,20 +15,7 @@ const LessonTemplate = ({
       </h1>
 
       <div className="video-container m-4 flex flex-col items-center">
-        {/* Video Embed */}
-        {videoUrl && (
-          <iframe
-            className="my-4"
-            width="560"
-            height="315"
-            src={videoUrl}
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen
-          ></iframe>
-        )}
+
 
         {/* Button Container */}
         <div class="flex flex-row items-center justify-center py-4 space-x-4 font-dosis font-bold">
