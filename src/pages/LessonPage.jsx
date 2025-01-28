@@ -58,7 +58,7 @@ const LessonPage = () => {
   }, [course, unit, lessonId]);
 
   if (loading) {
-    return <p>Loading...</p>;
+    return <></>;
   }
 
   if (!lessonData) {
