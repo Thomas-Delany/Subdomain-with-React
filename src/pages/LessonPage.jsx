@@ -9,46 +9,31 @@ const LessonPage = () => {
   const [prevLessonPath, setPrevLessonPath] = useState(null);
   const [nextLessonPath, setNextLessonPath] = useState(null);
 
-  // Helper function to get the path to the previous lesson
-  const getPreviousLessonPath = (course, unit, lessonId) => {
-    const currentLessonNumber = parseInt(lessonId.replace("Lesson", ""), 10);
-    const previousLessonNumber = currentLessonNumber - 1;
-    return previousLessonNumber > 0
-      ? `/lessons/${course}/${unit}/Lesson${previousLessonNumber}`
-      : null; // If there's no previous lesson, return null
-  };
-
-  // Helper function to get the path to the next lesson
-  const getNextLessonPath = (course, unit, lessonId) => {
-    const currentLessonNumber = parseInt(lessonId.replace("Lesson", ""), 10);
-    const nextLessonNumber = currentLessonNumber + 1;
-    return `/lessons/${course}/${unit}/Lesson${nextLessonNumber}`;
-  };
-
   useEffect(() => {
     const fetchLessonData = async () => {
       try {
-        // Dynamically import the correct course JSON file
         const courseData = await import(`../data/${course}.json`);
+        const lessons = courseData.units.flatMap((u) => u.lessons);
 
-        // Find the correct unit in the course
-        const selectedUnit = courseData.units.find((u) => u.unit === unit);
-
-        // Find the correct lesson by its id (lessonId)
-        const selectedLesson = selectedUnit
-          ? selectedUnit.lessons.find((l) => l.id === lessonId)
-          : null;
-
-        if (selectedLesson) {
-          setLessonData(selectedLesson);
-          setPrevLessonPath(getPreviousLessonPath(course, unit, lessonId));
-          setNextLessonPath(getNextLessonPath(course, unit, lessonId));
+        const currentIndex = lessons.findIndex((l) => l.id === lessonId);
+        if (currentIndex !== -1) {
+          setLessonData(lessons[currentIndex]);
+          setPrevLessonPath(
+            currentIndex > 0
+              ? `/lessons/${course}/${courseData.units.find((u) => u.lessons.includes(lessons[currentIndex - 1])).unit}/${lessons[currentIndex - 1].id}`
+              : null
+          );
+          setNextLessonPath(
+            currentIndex < lessons.length - 1
+              ? `/lessons/${course}/${courseData.units.find((u) => u.lessons.includes(lessons[currentIndex + 1])).unit}/${lessons[currentIndex + 1].id}`
+              : null
+          );
         } else {
-          setLessonData(null); // Lesson not found
+          setLessonData(null);
         }
       } catch (error) {
         console.error("Error loading course data:", error);
-        setLessonData(null); // Handle case where course data is not found
+        setLessonData(null);
       } finally {
         setLoading(false);
       }
