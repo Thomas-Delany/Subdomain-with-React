@@ -9,32 +9,28 @@ const LessonTemplate = ({
   nextLessonPath,
 }) => {
   return (
-    <div className="lesson bg-[#00C699]">
-      <h1 className="py-10 font-dosis text-4xl text-center font-bold text-white leading-tight">
+    <div className="lesson bg-[#ffffff]">
+      <h1 className="py-8 font-dosis text-4xl text-center font-bold text-white leading-tight text-[#333652]">
         {title}
       </h1>
 
-      <div className="video-container m-4 flex flex-col items-center">
-
-
-        {/* Button Container */}
-        <div class="flex flex-row items-center justify-center py-4 space-x-4 font-dosis font-bold">
-          <PreviousLessonButton prevLessonPath={prevLessonPath} />
-          <NextLessonButton nextLessonPath={nextLessonPath} />
-        </div>
-      </div>
-
       <div>
-        <h2 className="py-3 font-dosis text-3xl text-center font-bold text-white leading-tight">
+        <h2 className="py-3 font-dosis text-3xl text-center font-bold text-white leading-tight text-[#333652]">
           {content}
         </h2>
       </div>
 
-      <ul className="py-3 font-dosis text-2xl text-center font-bold text-white leading-tight">
+      <ul className="py-10 space-y-4 font-dosis text-2xl text-center font-bold text-white leading-tight text-[#333652]">
         {exercises.map((exercise, index) => (
           <li key={index}>{exercise}</li>
         ))}
       </ul>
+
+      {/* Button Container */}
+      <div class="flex flex-row items-center justify-center py-10 pb-28 space-x-4 font-dosis font-bold">
+        <PreviousLessonButton prevLessonPath={prevLessonPath} />
+        <NextLessonButton nextLessonPath={nextLessonPath} />
+      </div>
     </div>
   );
 };
