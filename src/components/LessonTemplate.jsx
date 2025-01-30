@@ -10,7 +10,7 @@ const LessonTemplate = ({
 }) => {
   return (
     <div className="lesson bg-[#ffffff]">
-      <h1 className="py-8 font-dosis text-4xl text-center font-bold text-white leading-tight text-[#333652]">
+      <h1 className="py-8 pt-12 font-dosis text-4xl text-center font-bold text-white leading-tight text-[#333652]">
         {title}
       </h1>
 

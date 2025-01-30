@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
@@ -9,19 +9,22 @@ import Footer from "./components/Footer";
 import LessonPage from "./pages/LessonPage";
 
 function App() {
+  const location = useLocation();
+  const isLessonPage = location.pathname.startsWith("/lessons/")
   return (
     <>
       <ScrollToTop />
-      <Navbar />
+      {!isLessonPage && <Navbar />}
+
       <Routes>
         <Route
-        path="/"
-        element={
-          <>
-          <Hero />
-          <Products />
-          </>
-        }
+          path="/"
+          element={
+            <>
+              <Hero />
+              <Products />
+            </>
+          }
         />
 
         {/* Dynamic route for individual courses */}
@@ -33,7 +36,8 @@ function App() {
           element={<LessonPage />}
         />
       </Routes>
-      <Footer />
+      {!isLessonPage && <Footer />}
+
     </>
   );
 }
