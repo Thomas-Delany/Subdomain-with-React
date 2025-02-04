@@ -7,7 +7,7 @@ import { courseData } from "../../../data/courseData";
 import curriculumData from "../../../data/curriculumData";
 
 const B2 = () => {
-  const courseId = "First";
+  const courseId = "B2First";
   const courseUnit = curriculumData[courseId];
 
   const currentCourseIndex = courseData.findIndex(

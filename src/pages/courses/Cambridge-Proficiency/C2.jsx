@@ -5,7 +5,7 @@ import CoursesDisplay from "./CourseDisplay";
 import curriculumData from "../../../data/curriculumData";
 
 const C2 = () => {
-  const courseId = "C2";
+  const courseId = "C2Proficiency";
   const courseUnit = curriculumData[courseId];
 
   return (

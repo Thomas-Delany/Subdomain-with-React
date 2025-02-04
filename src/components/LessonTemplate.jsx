@@ -11,7 +11,7 @@ const LessonTemplate = ({
   prevLessonPath,
   nextLessonPath,
 }) => {
-  const { course } = useParams(); // Get the course name from the URL
+  const { course } = useParams();
   const navigate = useNavigate();
 
   const courseHomepages = {
@@ -22,14 +22,25 @@ const LessonTemplate = ({
     C1: "Advanced",
     C2: "Mastery",
     B2Cambridge: "First",
-    AdvancedNew: "C1",
-    Proficiency: "C2",
-    Grammar: "Grammar",
-    EnglishPronunciation: "Pronunciation",
-    Verbs: "Verbs",
+    C1Cambridge: "AdvancedNew",
+    C2Cambridge: "Proficiency",
+    EnglishGrammar: "Grammar",
+    Pronunciation: "EnglishPronunciation",
+    VerbsInEnglish: "Verbs",
   };
 
-  const homepage = `/courses/${course}/${courseHomepages[course] || "default"}`;
+  const homepageMappings = {
+    First: "B2Cambridge",
+    AdvancedNew: "C1Cambridge",
+    Proficiency: "C2Cambridge",
+    Pronunciation: "EnglishPronunciation",
+    Grammar: "EnglishGrammar",
+    Verbs: "VerbsInEnglish",
+  };
+
+  const correctCourse = homepageMappings[course] || course;
+  const homepage = `/courses/${correctCourse}/${courseHomepages[correctCourse] || correctCourse}`;
+
 
   return (
     <div className="lesson bg-[#fff]">

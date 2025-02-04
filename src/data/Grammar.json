@@ -5,7 +5,7 @@
       "lessons": [
         {
           "id": "Lesson1",
-          "title": "Lesson 1 Title",
+          "title": "This is a grammar lessson",
           "content": "This is the content for Lesson 1 in Unit 1 of A1.",
           "exercises": ["Exercise 1", "Exercise 2"]
         },

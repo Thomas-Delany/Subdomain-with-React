@@ -5,9 +5,9 @@
       "lessons": [
         {
           "id": "Lesson1",
-          "title": "A Lesson about Verbs",
+          "title": "C1 Advanced exam",
           "content": "This is the content for Lesson 1 in Unit 1 of A1.",
-          "exercises": ["Exercise 1", "Exercise 2"]
+          "exercises": ["Exercise 1", "Exercise 2", "Exercise 3"]
         },
         {
           "id": "Lesson2",
