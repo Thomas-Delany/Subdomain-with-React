@@ -4,7 +4,6 @@ import { X } from "lucide-react";
 import NextLessonButton from "./NextLessonButton";
 import PreviousLessonButton from "./PreviousLessonButton";
 
-
 const LessonTemplate = ({
   title,
   content,
@@ -37,7 +36,8 @@ const LessonTemplate = ({
       <div className="flex justify-between items-center p-4">
         <button
           onClick={() => navigate(homepage)}
-          className="text-3xl text-gray-600 hover:text-gray-800">
+          className="text-3xl text-gray-600 hover:text-gray-800"
+        >
           ✖
         </button>
         <div className="w-full bg-gray-200 h-2 rounded-md"></div>
