@@ -44,14 +44,14 @@ const LessonTemplate = ({
 
   return (
     <div className="lesson bg-[#fff]">
-      <div className="flex justify-between items-center p-4">
+      <div className="flex items-center justify-center gap-x-2 p-4">
         <button
           onClick={() => navigate(homepage)}
           className="text-3xl text-gray-600 hover:text-gray-800"
         >
           <X size={38} />
         </button>
-        <div className="w-5/6 bg-gray-200 h-6 mx-auto m-4 rounded-md"></div>
+        <div className="w-5/6 bg-gray-200 h-6 rounded-2xl"></div>
       </div>
       <div>
         <h1 className="py-8 pt-12 font-dosis text-4xl text-center font-bold text-[#333652] leading-tight">
