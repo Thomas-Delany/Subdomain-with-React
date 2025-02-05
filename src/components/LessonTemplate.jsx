@@ -33,7 +33,7 @@ const LessonTemplate = ({
     First: "B2Cambridge",
     AdvancedNew: "C1Cambridge",
     Proficiency: "C2Cambridge",
-    Pronunciation: "EnglishPronunciation",
+    EnglishPronunciation: "Pronunciation",
     Grammar: "EnglishGrammar",
     Verbs: "VerbsInEnglish",
   };
@@ -49,9 +49,9 @@ const LessonTemplate = ({
           onClick={() => navigate(homepage)}
           className="text-3xl text-gray-600 hover:text-gray-800"
         >
-          ✖
+          <X size={38} />
         </button>
-        <div className="w-full bg-gray-200 h-2 rounded-md"></div>
+        <div className="w-5/6 bg-gray-200 h-6 mx-auto m-4 rounded-md"></div>
       </div>
       <div>
         <h1 className="py-8 pt-12 font-dosis text-4xl text-center font-bold text-[#333652] leading-tight">
