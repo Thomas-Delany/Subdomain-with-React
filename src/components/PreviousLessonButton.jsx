@@ -15,7 +15,7 @@ const PreviousLessonButton = ({ prevLessonPath }) => {
       disabled={!prevLessonPath}
       className="border border-[#00C699] py-3 px-4 rounded-lg text-lg w-48 h-12 flex items-center justify-center"
     >
-      Previous Lesson
+      Back
     </button>
   );
 };

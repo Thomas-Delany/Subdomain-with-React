@@ -15,7 +15,7 @@ const NextLessonButton = ({ nextLessonPath }) => {
       disabled={!nextLessonPath}
       className="bg-green-500 text-white py-3 px-4 rounded-lg text-lg w-48 h-12 flex items-center justify-center"
     >
-      Next Lesson
+      Check
     </button>
   );
 };
