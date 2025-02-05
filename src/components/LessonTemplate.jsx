@@ -1,6 +1,7 @@
 import React from "react";
+import { useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { X } from "lucide-react";
+import { X, Moon, Sun } from "lucide-react";
 import NextLessonButton from "./NextLessonButton";
 import PreviousLessonButton from "./PreviousLessonButton";
 
@@ -39,11 +40,18 @@ const LessonTemplate = ({
   };
 
   const correctCourse = homepageMappings[course] || course;
-  const homepage = `/courses/${correctCourse}/${courseHomepages[correctCourse] || correctCourse}`;
+  const homepage = `/courses/${correctCourse}/${
+    courseHomepages[correctCourse] || correctCourse
+  }`;
 
+  const [darkMode, setDarkMode] = useState(false);
 
   return (
-    <div className="lesson bg-[#fff]">
+    <div
+      className={`${
+        darkMode ? "bg-gray-900 text-white" : "bg-white text-gray-900"
+      } min-h-screen`}
+    >
       <div className="flex items-center justify-center gap-x-2 p-4">
         <button
           onClick={() => navigate(homepage)}
@@ -52,20 +60,26 @@ const LessonTemplate = ({
           <X size={38} />
         </button>
         <div className="w-5/6 bg-gray-200 h-6 rounded-2xl"></div>
+        <button
+          onClick={() => setDarkMode(!darkMode)}
+          className="text-3xl text-gray-600 hover:text-gray-800"
+        >
+          {darkMode ? <Sun size={32} /> : <Moon size={32} />}
+        </button>
       </div>
       <div>
-        <h1 className="py-8 pt-12 font-dosis text-4xl text-center font-bold text-[#333652] leading-tight">
+        <h1 className="py-8 pt-12 font-dosis text-4xl text-center font-bold leading-tight">
           {title}
         </h1>
       </div>
 
       <div>
-        <h2 className="py-3 font-dosis text-3xl text-center font-bold text-[#333652] leading-tight">
+        <h2 className="py-3 font-dosis text-3xl text-center font-bold leading-tight">
           {content}
         </h2>
       </div>
 
-      <ul className="py-10 space-y-4 font-dosis text-2xl text-center font-bold text-[#333652] leading-tight">
+      <ul className="py-10 space-y-4 font-dosis text-2xl text-center font-bold leading-tight">
         {exercises.map((exercise, index) => (
           <li key={index}>{exercise}</li>
         ))}
