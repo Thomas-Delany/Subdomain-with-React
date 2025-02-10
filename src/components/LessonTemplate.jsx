@@ -52,7 +52,7 @@ const LessonTemplate = ({
         darkMode ? "bg-gray-900 text-white" : "bg-white text-gray-900"
       } min-h-screen`}
     >
-      <div className="flex items-center justify-center gap-x-2 p-4">
+      <div className="flex items-center justify-center gap-x-2 p-4 pt-12">
         <button
           onClick={() => navigate(homepage)}
           className="text-3xl text-gray-600 hover:text-gray-800"
