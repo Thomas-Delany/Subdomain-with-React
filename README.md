@@ -6,6 +6,8 @@ English Reservoir is composed of two primary infrastructures,
 
 What’s this project about?
 
+Subdomain-with-React serves primarily as a prototype for the frontend of the courses subdomain for English Reservoir. I'll use it as a testing ground to enact changes before pushing changes to the private repo where more sensitive data is located, and for which the live site will be using.
+
 Similar to the template site (GitHub repository attached above), which I built to serve as a common infrastructure for all English Reservoir domains, this project’s aim is to build a template site for all english reservoir subdomains for our courses.
 
 For example, currently, we have:
