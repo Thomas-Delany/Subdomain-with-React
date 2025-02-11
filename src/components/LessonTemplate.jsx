@@ -40,17 +40,15 @@ const LessonTemplate = ({
   };
 
   const correctCourse = homepageMappings[course] || course;
-  const homepage = `/courses/${correctCourse}/${
-    courseHomepages[correctCourse] || correctCourse
-  }`;
+  const homepage = `/courses/${correctCourse}/${courseHomepages[correctCourse] || correctCourse
+    }`;
 
   const [darkMode, setDarkMode] = useState(false);
 
   return (
     <div
-      className={`${
-        darkMode ? "bg-gray-900 text-white" : "bg-white text-gray-900"
-      } min-h-screen`}
+      className={`${darkMode ? "bg-gray-900 text-white" : "bg-white text-gray-900"
+        } min-h-screen`}
     >
       <div className="flex items-center justify-center gap-x-2 p-4 pt-12">
         <button
